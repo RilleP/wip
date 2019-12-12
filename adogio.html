@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>adogio</title> 
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="mobile.css">
+<link rel="stylesheet" type="text/css" href="menu.css">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e81111">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<script>
+function toggle_search(open) {
+    console.log('SÖK');
+    var element = document.getElementById("search");
+    console.log(element);
+    element.setAttribute("open", open ? "true" : "false");
+}
+
+function toggle_menu(open) {
+    console.log("toggle menu " + open);
+    var element = document.getElementsByClassName("drawer");
+    element[0].setAttribute("open", open ? "true" : "false");
+}
+</script>
+</head>
+
+<body>
+        <div class="banner mobile_top_container">
+            <div class="mobile_top">
+                <a href="http://adogio.com/sv/" style="text-decoration: none; font-size:50px">ADOgio</a>
+                <div class="filler"></div>
+                <button class="top" onclick="toggle_search(true)">
+                    <img src="temp_search.png">
+                
+                    <div>Sök</div>
+                </button>
+                <button class="top" onclick="toggle_menu(true)">
+                    <img src="temp_menu.png">
+                
+                    <div>Meny</div>
+                </button>
+            </div>
+            <div id="search">
+
+                <form>                    
+                    <a href="javascript:void(0)" class="drop_down"><div>Alla ämnen</div></a>
+                    <input class="search_box" type="text" name="search" placeholder="Sök"></input>
+                </form>
+                <button class="search_cancel" onclick="toggle_search(false)">Avbryt</button>
+            </div>
+        </div>
+
+        <div class="banner screen_top" style="background-color:rgb(238, 238, 238); border-bottom:18px solid #cc0000">
+            <div>
+                <div class="topheader">
+                    <a href="http://adogio.com/sv/" style="text-decoration: none;color:#dd0000; font-size:48px">adogio</a>
+                </div>   
+             </div>
+        </div>
+
+
+    <section class='layout1'>
+        <div>
+            <header><div class="left line"/></div><img src="temp_icon.png">SENASTE NYTT<div class="right line"/></div></header>
+            <div>                
+            <ul>
+
+    <li>
+        <a href="F.191117.02001900531003">
+            <div>
+                <header>Tim Ternebrink – stor matchvinnare</header> 
+                <p>Tim Ternebrink bidrog starkt till segern för Onsala (P19) mot Varbergs (P19) genom att göra tre mål. Matchen slutade…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02001900526003">
+            <div>
+                <header>Albin Hellqvist fixade segern</header> 
+                <p>Stor matchvinnare - Albin Hellqvist med två mål. Norrköping (P19) vann med 4-1 mot Hammarby T (P19).    Inte bara en, uta…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02001900522004">
+            <div>
+                <header>Sandviken hade ingen chans </header> 
+                <p>Inget snack, 6-0 till Djursholm (P19) och en klar seger. Stor hjälp fanns i Gustav Lindgren – via fyra fullträffar.    Gäst…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02001900533003">
+            <div>
+                <header>Mohammad Alsalkhadi fixade segern</header> 
+                <p>Mohammad Alsalkhadi bidrog starkt till segern för Halmstads (P19) mot Eskilsminne (P19) genom att göra tre mål. Match…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02001960878006">
+                <img src="http://adogio.com/images/swe__savedalens_if_rod_400x250.jpg" alt="swe  savedalens if rod">
+                <img src="http://adogio.com/images/swe__savedalens_if_rod_400x125.jpg" alt="swe  savedalens if rod">
+            <div>
+                <header>Christian Dejanovic bakom segern</header> 
+                <p>Christian Dejanovic bidrog starkt till segern för Sävedalens Röd mot Landvetter P05 genom att göra två mål. Matchen sl…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02001900559003">
+            <div>
+                <header>Daniel Bradley stor segerorganisatör</header> 
+                <p>Daniel Bradley bidrog starkt till segern för Brommapojkarna (P16) mot Lidingö (P16) genom att göra tre mål. Matche…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02001900529003">
+            <div>
+                <header>Göteborg kan tacka Alfons Nygaard</header> 
+                <p>Stor matchvinnare - Alfons Nygaard med två mål. Göteborg (P19) vann med 3-0 mot Skoftebyns (P19).    Det var bortalag…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02001900522003">
+            <div>
+                <header>Samuel Smith satte sent avgörande</header> 
+                <p>Samuel Smith blev hjälte för sitt Frej Täby (P19). Med en minut kvar av matchen kom 5-4 mot Gefle (P19).    Hemmalage…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02001900527004">
+            <div>
+                <header>Filip Höijer fällde avgörandet</header> 
+                <p>Två mål - då blir man matchvinnare. Filip Höijer hjälpte sitt Karlslunds (P19) till en 4-3-seger mot Karlstads (P19)…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02001900566004">
+            <div>
+                <header>Halmstad vann stort </header> 
+                <p>När en match slutar 7-2 finns det inte så mycket att säga kring slump och orättvisa. Halmstads (P16) var bäst, Landskrona (P16) få…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02001900565003">
+            <div>
+                <header>Astrio vann – David Musaj matchhjälte</header> 
+                <p>David Musaj bidrog starkt till segern för Astrio (P16) mot Värnamo (P16) genom att göra två mål. Matchen slutade…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02001900552004">
+            <div>
+                <header>Bjärred fick en rejäl lektion av Trelleborg </header> 
+                <p>Det blev en övertygande seger för Trelleborgs (P17). Matchen slutade 7-0. En spelare som hade stor del i d…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02001960881008">
+            <div>
+                <header>Donsö vann – Fred Genemo matchhjälte</header> 
+                <p>Stor matchvinnare - Fred Genemo med två mål. Donsö vann med 4-0 mot Ale United P04.    Minut 29. Och tuff uppförsb…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02001900552003">
+            <div>
+                <header>Malmö vann stort </header> 
+                <p>Malmö (P17) hade en stor dag. Stor dag och stor seger. 11-0 mot Limhamn Bunkeflo (P17) slutade matchen. Ajdin Avdic bidrog med fem må…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02001960896006">
+            <div>
+                <header>Landvetter 2003 slog Älvängens 2004</header> 
+                <p>Landvetter 2003 F04 gjorde 1 mål och Älvängens 2004 gjorde 0. 1-0 till slut, alltså.    Hemmalaget Landvetter 2003…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02001900662003">
+            <div>
+                <header>Edwin Dellkrans fixade segern</header> 
+                <p>Stor matchvinnare - Edwin Dellkrans med två mål. Medelpad vann med 5-1 mot Ångermanland.    Ångermanland fick jubla tidig…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02002021003005">
+            <div>
+                <header>Hassan Gaal fixade segern</header> 
+                <p>Stor matchvinnare - Hassan Gaal med två mål. Vivalla vann med 3-0 mot Garphyttan.    Efter 36 minuter. 3-0 till Vivalla. Gäst…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191118.02002021004009">
+            <div>
+                <header>Oavgjort för Kumla 2 och Askersund 2</header> 
+                <p>I fajten mellan Kumla 2 och Askersund 2 blev det till slut 1-1.    Spela på ledningen lyckades inte för Askersund…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02001900523004">
+            <div>
+                <header>Jack Dolk bakom segern</header> 
+                <p>Två mål - då blir man matchvinnare. Jack Dolk hjälpte sitt Täby (P19) till en 3-1-seger mot Brage (P19).    Båda lagen var avvak…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02001900548001">
+            <div>
+                <header>Kinna hade ingen chans </header> 
+                <p>Väl värda en segersång, Gais – och inte minst Theodore Persson som gjorde fem mål. Seger mot Kinna (P17) med dunder och brak, 6…</p> 
+            </div>
+        </a>
+    </li>
+                </ul>                
+                <div class="button_container"></div><button class="more">Fler nyheter</button></div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class='layout3'>
+        <div>
+            <header>
+                <div class="left line" />
+                </div><img src="temp_icon.png">SPORT
+                <div class="right line" />
+                </div>
+            </header>
+            <div>                
+            <ul>
+
+    <li>
+        <a href="F.191117.02002024301002">
+            <div>
+                <div class="category">SPORT | </div> <header>Adolfsberg tog tre poäng mot Hallsberg</header> 
+                <p>Oartig gäst, Adolfsberg. Det blev seger på bortaplan mot Hallsberg.   På söndagen gästade Adolfsberg Hallsberg p…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191119.02002800303006">
+            <div>
+                <header>Storseger för Slovenien </header> 
+                <p>Inget snack, 7-0 till Slovenien och en klar seger. Stor hjälp fanns i Nik Prelec – via tre fullträffar.    Efter 45+1 minuter…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191119.02002800303005">
+            <div>
+                <header>Danylo Sikan stor segerorganisatör</header> 
+                <p>Stor matchvinnare - Danylo Sikan med två mål. Ukraina vann med 2-1 mot Sverige.    Gästande Ukraina tog tag i matche…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02001960878004">
+            <div>
+                <header>Dött lopp mellan Bergums 2 och Väster Orange</header> 
+                <p>Bergums 2 gjorde 3 mål och Väster Orange gjorde 3. 3-3 till slut, alltså.   Bergums 2 tog på söndagen emot…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191118.02002800104028">
+            <div>
+                <header>Malta föll mot Norge</header> 
+                <p>1-2 slutade mötet mellan Malta och Norge.    Bortalaget Norge slog till tidigt med mål i minut sju. Joshua King satte 1-0.  Efter…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02002070945013">
+            <div>
+                <header>Vinsten till Film – slog Rimbo med 3-0</header> 
+                <p>Hemmaplan räckte inte för Rimbo F06. Det blev förlust mot Films F07.   Rimbo tog på söndagen emot Film på Långsj…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191118.02002800104029">
+                <img src="http://adogio.com/images/xxx__spain_400x250.jpg" alt="xxx  spain">
+                <img src="http://adogio.com/images/xxx__spain_400x125.jpg" alt="xxx  spain">
+            <div>
+                <header>Spanien flera nummer större än Rumänien</header> 
+                <p>Rumänien stod inte upp tillräckligt mot Spanien. När slutsignalen ljudit stod det 5-0 på resultattavlan.   Månd…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02002010009004">
+            <div>
+                <header>Arjeplog Galaxy 2 och Gällivare fick dela på poängen</header> 
+                <p>4-4 slutade matchen. Arjeplog Galaxy 2 hade gjort 4 mål och Gällivare 4.   Arjeplog Galaxy 2 spela…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02002050142001">
+            <div>
+                <header>Saltsjöbaden föll mot Sickla</header> 
+                <p>Sickla tog tre poäng, trots bortaplan blev det seger mot Saltsjöbaden.   På söndagen spelade Saltsjöbaden mot Sickla på Fi…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02002070915014">
+            <div>
+                <header>Vaksala Gul 2 poänglöst mot Alsike</header> 
+                <p>Alsike P06 vann matchen mot Vaksala P06 Gul 2 klart. 9-2 talade sitt tydliga språk. Tre poäng till Alsike P06.   På…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02002010009007">
+            <div>
+                <header>Chanslöst Arjeplog Galaxy 2 föll stort </header> 
+                <p>Jokkmokk vann matchen mot Arjeplog Galaxy 2 klart. 5-0 talade sitt tydliga språk. Tre poäng till Jokkmokk.   På…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02002010009010">
+            <div>
+                <header>Arjeplog Galaxy föll, 2-5</header> 
+                <p>Det blev bortavinst för Jokkmokk. Tre poäng mot Arjeplog Galaxy.   Hemmalaget Arjeplog Galaxy tog emot gästande Jokkmokk på S…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02002010009006">
+            <div>
+                <header>Vinsten till Jokkmokk – slog Arjeplog Galaxy med 5-3</header> 
+                <p>Matchen mellan Arjeplog Galaxy och Jokkmokks U slutade med seger för bortalaget.   Söndag och matc…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191118.02002110001002">
+            <div>
+                <header>Europe Juniors mosade Västerås </header> 
+                <p>Västerås hade inte tillräckligt att sätta emot, Europe Juniors var solklart bästa laget. Vinsten skrevs 8-4.   På månda…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02002094819002">
+            <div>
+                <header>Umeå slog Gimonäs Umeå</header> 
+                <p>När en match slutar 6-1 finns det inte så mycket att säga kring slump och orättvisa. Umeå var bäst, Gimonäs Umeå får försöka stu…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02002070920023">
+            <div>
+                <header>4-2 – seger för Rimbo</header> 
+                <p>På hemmaplan tog Rimbo P07 de tre poängen mot Storvreta P07 vit.   Söndag och matchdags. Hemmalaget Rimbo tog emot Storvreta vit…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191118.02001960904246">
+            <div>
+                <header>Villkorslös seger för Göteborg </header> 
+                <p>Pang, bom. En riktig stjärnsmäll för Sävedalens (DJ). Göteborg (F17) vann med 11-3.   Göteborg tog på måndagen emot Säv…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191117.02002010009008">
+            <div>
+                <header>Gällivare överkört </header> 
+                <p>11-4 till Arvidsjaur. Inte nån större chans för Gällivare.   På söndagen spelade Arvidsjaur mot Gällivare på Sporthallen Jokkmokk…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191118.02002800104030">
+                <img src="http://adogio.com/images/xxx__sweden_400x250.jpg" alt="xxx  sweden">
+                <img src="http://adogio.com/images/xxx__sweden_400x125.jpg" alt="xxx  sweden">
+            <div>
+                <header>Alla poängen till Sverige, vann 3-0</header> 
+                <p>Det blev 3-0 i mötet Sverige-Faroe Island.    29 minuter, sen hade hemmalaget Sverige tagit ledningen. 1-0 genom Se…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191118.02001911207001">
+                <img src="http://adogio.com/images/swe__jamjo_goif_400x250.jpg" alt="swe  jamjo goif">
+                <img src="http://adogio.com/images/swe__jamjo_goif_400x125.jpg" alt="swe  jamjo goif">
+            <div>
+                <header>Jämjö krossade Sillhövda </header> 
+                <p>Väl värda en segersång, Jämjö. Seger mot Sillhövda med dunder och brak, 9-5.   På måndagen gästade Sillhövda Jämjö på Jämjö I…</p> 
+            </div>
+        </a>
+    </li>
+                </ul>                
+                <button class="more">Mer sport</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class='layout2'>
+        <div>
+            <header>
+                <div class="left line" />
+                </div><img src="temp_icon.png">SPORT
+                <div class="right line" />
+                </div>
+            </header>
+            <div>                
+            <ul>
+
+    <li>
+        <a href="F.191102.02001900001237">
+                <img src="http://adogio.com/images/swe__hammarby_400x250.jpg" alt="swe  hammarby">
+                <img src="http://adogio.com/images/swe__hammarby_400x125.jpg" alt="swe  hammarby">
+            <div>
+                <header>Hammarby vann mot Häcken med 4-1</header> 
+                <p>Hammarby vann på hemmaplan mot Häcken.   På lördagen möttes Hammarby och Häcken på Tele2 Arena.  Man inledde bäst, Ham…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191102.02001900001239">
+                <img src="http://adogio.com/images/swe__aik_400x250.jpg" alt="swe  aik">
+                <img src="http://adogio.com/images/swe__aik_400x125.jpg" alt="swe  aik">
+            <div>
+                <header>Henok Goitom avgjorde på tilläggstid</header> 
+                <p>Matchklockan hade passerat 90. Då kom avgörandet. Henok Goitom gjorde 2-1 för AIK mot Sundsvall.   AIK som låg på…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191102.02001900001240">
+                <img src="http://adogio.com/images/swe__ik_sirius_fk_400x250.jpg" alt="swe  ik sirius fk">
+                <img src="http://adogio.com/images/swe__ik_sirius_fk_400x125.jpg" alt="swe  ik sirius fk">
+            <div>
+                <header>Kalmar kammade noll</header> 
+                <p>3-0 blev det. 3 för hemmalaget Sirius och 0 för gästande Kalmar.    Det var en försiktig start på kampen.  I den första halvleken l…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191102.02001900001234">
+                <img src="http://adogio.com/images/swe__malmo_ff_400x250.jpg" alt="swe  malmo ff">
+                <img src="http://adogio.com/images/swe__malmo_ff_400x125.jpg" alt="swe  malmo ff">
+            <div>
+                <header>Örebro fick en rejäl lektion av Malmö </header> 
+                <p>Skillnaden var stor. Malmö vann med 5-0 över Örebro. Markus Rosenberg var en viktig del – med två mål gjorda…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191102.02001900001233">
+                <img src="http://adogio.com/images/swe__if_elfsborg_400x250.jpg" alt="swe  if elfsborg">
+                <img src="http://adogio.com/images/swe__if_elfsborg_400x125.jpg" alt="swe  if elfsborg">
+            <div>
+                <header>Helsingborg föll mot Elfsborg</header> 
+                <p>Helsingborg gjorde 1 mål och Elfsborg gjorde 2. 1-2 till slut, alltså.    Bortalaget Elfsborg satte 1-0 genom Rasmus Alm…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191102.02001900001236">
+            <div>
+                <header>Oavgjort för Norrköping och Djurgården</header> 
+                <p>2-2 blev det. 2 för hemmalaget Norrköping och 2 för gästande Djurgården.    Hemmalaget Norrköping dominerade inl…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191102.02001900001238">
+                <img src="http://adogio.com/images/swe__ifk_goteborg_400x250.jpg" alt="swe  ifk goteborg">
+                <img src="http://adogio.com/images/swe__ifk_goteborg_400x125.jpg" alt="swe  ifk goteborg">
+            <div>
+                <header>Östersund hade ingen chans </header> 
+                <p>7-1 – siffror som är svåra att invända mot. Göteborg krossade Östersund.   Hemmalaget Göteborg tog emot gästande Östersund…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191102.02001900001235">
+                <img src="http://adogio.com/images/swe__falkenbergs_ff_400x250.jpg" alt="swe  falkenbergs ff">
+                <img src="http://adogio.com/images/swe__falkenbergs_ff_400x125.jpg" alt="swe  falkenbergs ff">
+            <div>
+                <header>Falkenberg kan tacka Nsima Peter</header> 
+                <p>Nsima Peter blev matchhjälte för sitt Falkenberg. På tillgäggstid kom 1-0 mot Eskilstuna.    Det var en försiktig star…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191028.02001900001225">
+                <img src="http://adogio.com/images/swe__if_elfsborg_400x250.jpg" alt="swe  if elfsborg">
+                <img src="http://adogio.com/images/swe__if_elfsborg_400x125.jpg" alt="swe  if elfsborg">
+            <div>
+                <header>Elfsborg starkast, slog Göteborg</header> 
+                <p>Elfsborg gjorde 2 mål och Göteborg gjorde 0. 2-0 till slut, alltså.    Hemmalaget Elfsborg slog till med mål efter 34…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191028.02001900001230">
+                <img src="http://adogio.com/images/swe__djurgarden_400x250.jpg" alt="swe  djurgarden">
+                <img src="http://adogio.com/images/swe__djurgarden_400x125.jpg" alt="swe  djurgarden">
+            <div>
+                <header>Seger och serieledning för Djurgården</header> 
+                <p>3 för hemmalaget och 0 för bortalaget. 3-0 på tavlan.  Via tre poäng blev det även serieledning för Djurgården…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191028.02001900001229">
+                <img src="http://adogio.com/images/swe__malmo_ff_400x250.jpg" alt="swe  malmo ff">
+                <img src="http://adogio.com/images/swe__malmo_ff_400x125.jpg" alt="swe  malmo ff">
+            <div>
+                <header>Alla poängen till Malmö, vann 2-0</header> 
+                <p>Det blev 2-0 i mötet Malmö-AIK.    Ställningskrig, positionshållande – så kan man sammanfatta inledningen av matchen…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191027.02001900001227">
+                <img src="http://adogio.com/images/swe__hammarby_400x250.jpg" alt="swe  hammarby">
+                <img src="http://adogio.com/images/swe__hammarby_400x125.jpg" alt="swe  hammarby">
+            <div>
+                <header>Tre poäng och ny serieledare</header> 
+                <p>Östersund och Hammarby möttes, det blev 1-2.  Via tre poäng blev det även serieledning för Hammarby.  Östersund, som låg p…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191027.02001900001232">
+            <div>
+                <header>Eskilstuna och Sirius höll tätt</header> 
+                <p>I fajten mellan Eskilstuna och Sirius blev det till slut 0-0.   Eskilstuna, som låg på plats 16, ställdes mot Sirius so…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191027.02001900001231">
+                <img src="http://adogio.com/images/swe__ifk_norrkoping_fk_400x250.jpg" alt="swe  ifk norrkoping fk">
+                <img src="http://adogio.com/images/swe__ifk_norrkoping_fk_400x125.jpg" alt="swe  ifk norrkoping fk">
+            <div>
+                <header>Slutforcering gav Norrköping tre poäng</header> 
+                <p>På slutet kom avgörandet. Rasmus Lauritsen gjorde 1-0 för Norrköping med bara två minuter kvar av ordinarie tid…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191026.02001900001228">
+                <img src="http://adogio.com/images/swe__kalmar_ff__swe__romario_pereira_sipiao_400x250.jpg" alt="swe  kalmar ff  swe  romario pereira sipiao">
+                <img src="http://adogio.com/images/swe__kalmar_ff__swe__romario_pereira_sipiao_400x125.jpg" alt="swe  kalmar ff  swe  romario pereira sipiao">
+            <div>
+                <header>Falkenberg vann böljande match</header> 
+                <p>Kalmar hade varit uppe i lika men förlorade. De tre poängen till Falkenberg efter 3-2.    Inget av lagen ville riktigt t…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191026.02001900001226">
+                <img src="http://adogio.com/images/swe__helsingborgs_if_400x250.jpg" alt="swe  helsingborgs if">
+                <img src="http://adogio.com/images/swe__helsingborgs_if_400x125.jpg" alt="swe  helsingborgs if">
+            <div>
+                <header>Slutforcering gav Helsingborg tre poäng</header> 
+                <p>På slutet kom avgörandet. Tobias Mikkelsen gjorde 2-1 för Helsingborg med bara fyra minuter kvar av ordinarie t…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191021.02001900001223">
+                <img src="http://adogio.com/images/swe__djurgarden_400x250.jpg" alt="swe  djurgarden">
+                <img src="http://adogio.com/images/swe__djurgarden_400x125.jpg" alt="swe  djurgarden">
+            <div>
+                <header>Djurgården vann – nu tabelletta</header> 
+                <p>0-1 slutade mötet mellan Göteborg och Djurgården.  Tack vare vinsten klättrade Djurgården upp i serieledning.   Ställni…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191021.02001900001218">
+            <div>
+                <header>Örebro knep en poäng</header> 
+                <p>Johan Bertilsson räddade en poäng till Örebro. På tilläggstid kom kvitteringen till 2-2.    1-0 kom i minut 14. Det var bortalaget…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191020.02001900001220">
+                <img src="http://adogio.com/images/swe__ifk_norrkoping_fk_400x250.jpg" alt="swe  ifk norrkoping fk">
+                <img src="http://adogio.com/images/swe__ifk_norrkoping_fk_400x125.jpg" alt="swe  ifk norrkoping fk">
+            <div>
+                <header>Norrköping slog Kalmar</header> 
+                <p>Norrköping gjorde 1 mål och Kalmar gjorde 0. 1-0 till slut, alltså.   Norrköping mot Kalmar, plats fem mot plats 13 tabellmässig…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.191020.02001900001222">
+                <img src="http://adogio.com/images/swe__hammarby_400x250.jpg" alt="swe  hammarby">
+                <img src="http://adogio.com/images/swe__hammarby_400x125.jpg" alt="swe  hammarby">
+            <div>
+                <header>Seger och upp i serietopp för Hammarby</header> 
+                <p>2-0 slutade mötet mellan Hammarby och Malmö.  Tack vare vinsten klättrade Hammarby upp i serieledning.   Hemmala…</p> 
+            </div>
+        </a>
+    </li>
+                </ul>                
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class='layout3'>
+        <div>
+            <header>Damallsvenskan</header>
+            <div>                
+            <ul>
+
+    <li>
+        <a href="F.181027.02000000201129">
+                <img src="http://adogio.com/images/swe__kopparbergs-goteborg_fc_400x250.jpg" alt="swe  kopparbergs-goteborg fc">
+                <img src="http://adogio.com/images/swe__kopparbergs-goteborg_fc_400x125.jpg" alt="swe  kopparbergs-goteborg fc">
+            <div>
+                <header>Seger för Kopparberg/Göteborg i svängmatch</header> 
+                <p>Man hade haft likaläge, men Rosengård förlorade. Kopparberg/Göteborg vann med 4-2.    En riktig pangstart. D…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.181027.02000000201131">
+                <img src="http://adogio.com/images/swe__vittsjo_gik_400x250.jpg" alt="swe  vittsjo gik">
+                <img src="http://adogio.com/images/swe__vittsjo_gik_400x125.jpg" alt="swe  vittsjo gik">
+            <div>
+                <header>Michelle de Jongh grejade tre poäng</header> 
+                <p>Michelle de Jongh bidrog starkt till segern för Vittsjö mot Hammarby genom att göra två mål. Matchen slutade 3-0…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.181027.02000000201128">
+            <div>
+                <header>Linköping och Kristianstad höll tätt</header> 
+                <p>0-0 slutade matchen. Linköping hade gjort 0 mål och Kristianstad 0.    Ställningskrig, positionshållande – så kan…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.181027.02000000201130">
+                <img src="http://adogio.com/images/swe__if_limhamn_bunkeflo_400x250.jpg" alt="swe  if limhamn bunkeflo">
+                <img src="http://adogio.com/images/swe__if_limhamn_bunkeflo_400x125.jpg" alt="swe  if limhamn bunkeflo">
+            <div>
+                <header>Alla poängen till Limhamn Bunkeflo, vann 1-0</header> 
+                <p>Slutresultatet mellan Limhamn Bunkeflo och Djurgården skrevs till 1-0.    34 minuter, sen hade hemmalaget…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.181027.02000000201132">
+                <img src="http://adogio.com/images/swe__eskilstuna_united_dff__swe__mimmi_larsson_400x250.jpg" alt="swe  eskilstuna united dff  swe  mimmi larsson">
+                <img src="http://adogio.com/images/swe__eskilstuna_united_dff__swe__mimmi_larsson_400x125.jpg" alt="swe  eskilstuna united dff  swe  mimmi larsson">
+            <div>
+                <header>Felicia Karlsson bakom segern</header> 
+                <p>Stor matchvinnare - Felicia Karlsson med två mål. Eskilstuna United vann med 4-1 mot Kalmar.   Det var ett möte mellan pl…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.181027.02000000201127">
+                <img src="http://adogio.com/images/swe__pitea_if_dff_400x250.jpg" alt="swe  pitea if dff">
+                <img src="http://adogio.com/images/swe__pitea_if_dff_400x125.jpg" alt="swe  pitea if dff">
+            <div>
+                <header>SM-guldet till Piteå</header> 
+                <p>Rå, rejäl och resolut. Så var segern för Piteå. Det blev hela 6-1 för Piteå mot Växjö. Och i och med att Rosengård inte vann mot G…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.181023.02000000201126">
+            <div>
+                <header>Linköping räddade en poäng</header> 
+                <p>När det närmade sig matchslut – med fyra minuter kvar – klev Lina Hurtig fram och fick till oavgjort för Linköping. Djurgård…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.181022.02000000201125">
+                <img src="http://adogio.com/images/swe__fc_rosengard_400x250.jpg" alt="swe  fc rosengard">
+                <img src="http://adogio.com/images/swe__fc_rosengard_400x125.jpg" alt="swe  fc rosengard">
+            <div>
+                <header>Rosengård serieledare efter vinst mot Piteå</header> 
+                <p>1-0 blev det. 1 för hemmalaget Rosengård och 0 för gästande Piteå.  Via tre poäng blev det även serielednin…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.181021.02000000201122">
+                <img src="http://adogio.com/images/swe__vittsjo_gik_400x250.jpg" alt="swe  vittsjo gik">
+                <img src="http://adogio.com/images/swe__vittsjo_gik_400x125.jpg" alt="swe  vittsjo gik">
+            <div>
+                <header>Förlustsviten bruten – Vittsjö vann</header> 
+                <p>Odiskutabelt, och rent av förkrossande. Vittsjö slog Eskilstuna United med 4-0. Clara Markstedt gjorde tre mål för…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.181020.02000000201123">
+                <img src="http://adogio.com/images/swe__kopparbergs-goteborg_fc_400x250.jpg" alt="swe  kopparbergs-goteborg fc">
+                <img src="http://adogio.com/images/swe__kopparbergs-goteborg_fc_400x125.jpg" alt="swe  kopparbergs-goteborg fc">
+            <div>
+                <header>Storstryk för Kristianstad – Kopparberg/Göteborg överlägsna </header> 
+                <p>Kristianstad får bryta ihop och försöka gå vidare. Kopparberg/Göteborg vann med 5-1 när la…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.181020.02000000201124">
+                <img src="http://adogio.com/images/swe__if_limhamn_bunkeflo_400x250.jpg" alt="swe  if limhamn bunkeflo">
+                <img src="http://adogio.com/images/swe__if_limhamn_bunkeflo_400x125.jpg" alt="swe  if limhamn bunkeflo">
+            <div>
+                <header>Limhamn Bunkeflo-seger i bottenstrid</header> 
+                <p>Kalmar gjorde 0 mål och Limhamn Bunkeflo gjorde 3. 0-3 till slut, alltså.    Gästerna Limhamn Bunkeflo tog kommand…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.181020.02000000201121">
+                <img src="http://adogio.com/images/swe__vaxjo_dff_400x250.jpg" alt="swe  vaxjo dff">
+                <img src="http://adogio.com/images/swe__vaxjo_dff_400x125.jpg" alt="swe  vaxjo dff">
+            <div>
+                <header>Växjö vann stort </header> 
+                <p>5-1, en riktig kross blev det. Växjö tog de tre poängen med lätthet mot Hammarby.   Växjö och Hammarby möttes på Myresjöhus Arena 1…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.181014.02000000201119">
+                <img src="http://adogio.com/images/swe__fc_rosengard_400x250.jpg" alt="swe  fc rosengard">
+                <img src="http://adogio.com/images/swe__fc_rosengard_400x125.jpg" alt="swe  fc rosengard">
+            <div>
+                <header>Hammarby kapsejsade mot Rosengård</header> 
+                <p>5-1 till Rosengård. Och Anja Mittag blev två-målskytt. Inte nån större chans för Hammarby.   Det var plats tre i tabe…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.181014.02000000201120">
+                <img src="http://adogio.com/images/swe__djurgardens_if_ff_400x250.jpg" alt="swe  djurgardens if ff">
+                <img src="http://adogio.com/images/swe__djurgardens_if_ff_400x125.jpg" alt="swe  djurgardens if ff">
+            <div>
+                <header>Djurgården tog tre poäng mot Vittsjö</header> 
+                <p>2-0 slutade matchen. Djurgården hade gjort 2 mål och Vittsjö 0.    Hemmalaget Djurgården tog kommandot genom att g…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.181014.02000000201115">
+                <img src="http://adogio.com/images/swe__kopparbergs-goteborg_fc_400x250.jpg" alt="swe  kopparbergs-goteborg fc">
+                <img src="http://adogio.com/images/swe__kopparbergs-goteborg_fc_400x125.jpg" alt="swe  kopparbergs-goteborg fc">
+            <div>
+                <header>Kopparberg/Göteborg körde över Växjö </header> 
+                <p>Växjö kunde bara tacka för uppvisningen. Kopparberg/Göteborg vann med stor marginal, 4-0. Rebecka Blomqvist bidro…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.181014.02000000201117">
+                <img src="http://adogio.com/images/swe__kristianstads_dff_400x250.jpg" alt="swe  kristianstads dff">
+                <img src="http://adogio.com/images/swe__kristianstads_dff_400x125.jpg" alt="swe  kristianstads dff">
+            <div>
+                <header>Ogonna Chukwudi bakom segern</header> 
+                <p>Stor matchvinnare - Ogonna Chukwudi med två mål. Kristianstad vann med 4-2 mot Limhamn Bunkeflo.   Kristianstad låg på pla…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.181014.02000000201118">
+                <img src="http://adogio.com/images/swe__pitea_if_dff_400x250.jpg" alt="swe  pitea if dff">
+                <img src="http://adogio.com/images/swe__pitea_if_dff_400x125.jpg" alt="swe  pitea if dff">
+            <div>
+                <header>Formen håller i sig för Piteå</header> 
+                <p>Kalmar tog emot Piteå på sin hemmaplan. Mötet slutade 1-2.   Kalmar på tabellplats tolv tog emot Piteå som låg på plats e…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.181013.02000000201116">
+                <img src="http://adogio.com/images/swe__eskilstuna_united_dff_400x250.jpg" alt="swe  eskilstuna united dff">
+                <img src="http://adogio.com/images/swe__eskilstuna_united_dff_400x125.jpg" alt="swe  eskilstuna united dff">
+            <div>
+                <header>Eskilstuna United starkast, slog Linköping</header> 
+                <p>Kampen mellan Linköping och Eskilstuna United slutade 0-1.    Det var en försiktig start på kampen.  Inga må…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.180930.02000000201114">
+                <img src="http://adogio.com/images/swe__eskilstuna_united_dff__swe__mimmi_larsson_400x250.jpg" alt="swe  eskilstuna united dff  swe  mimmi larsson">
+                <img src="http://adogio.com/images/swe__eskilstuna_united_dff__swe__mimmi_larsson_400x125.jpg" alt="swe  eskilstuna united dff  swe  mimmi larsson">
+            <div>
+                <header>Eskilstuna United kan tacka Mimmi Larsson</header> 
+                <p>Stor matchvinnare - Mimmi Larsson med två mål. Eskilstuna United vann med 3-1 mot Djurgården.    Det var hemm…</p> 
+            </div>
+        </a>
+    </li>
+    <li>
+        <a href="F.180930.02000000201110">
+                <img src="http://adogio.com/images/swe__pitea_if_dff_400x250.jpg" alt="swe  pitea if dff">
+                <img src="http://adogio.com/images/swe__pitea_if_dff_400x125.jpg" alt="swe  pitea if dff">
+            <div>
+                <header>Piteå vann svängigt möte</header> 
+                <p>Man hade haft likaläge, men Linköping förlorade. Piteå vann med 4-2.    Piteå fick jubla tidigt - Nina Jakobsson gjorde 1-0 ef…</p> 
+            </div>
+        </a>
+    </li>
+                </ul>                
+            </div>
+        </div>
+    </section>
+
+    <footer class="banner">
+        <p>&nbsp;</p>
+        <div>
+            <p>© <span>adogio</span></p>
+            <span>http://adogio.com</span>
+            e-post <span>info@adogio.com</span><br />
+            Chefredaktör och ansvarig utgivare: Ola Nilsson
+        </div>
+     </footer>
+
+    <div class="drawer">
+        <header>
+            <button onclick="toggle_menu(false)">
+                <img src="temp_close.png">
+                <div>Stäng</div>
+            </button>
+        </header>
+        <ul>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+        </ul>
+        <ul>
+            <li>< Sport</li>
+        </ul>
+        
+        <ul>
+            <div class="desc">
+                <div class="header">Så funkar det | </div>
+                Adigio är en bla bla bla där du som användare kan bla bla bla <a href="#about"> Läs mer här</a>
+            </div>
+            <li>Om adigio</li>
+            <li>Kontakta oss</li>
+        </ul>        
+        
+    </div>
+</body>
+</html>

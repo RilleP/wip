@@ -1,0 +1,49 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.drawer {
+    background-color: white;
+    position: fixed;
+    left: 50%;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    transition: all 0.2s ease-out;
+}
+
+.drawer[open=false] {
+    left: 100%;
+}
+
+.drawer > header {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 20pt;
+}
+
+.drawer > header button div {
+    font-size: 8pt;
+}
+
+.desc {
+    padding: 16pt;
+    background-color: #22989d;
+}
+
+.desc .header {
+    display: inline-block;
+    padding: 0px;
+    font-weight: bold;
+}
+.desc .text {
+    display: inline-block;
+    padding: 0px;
+    
+}
+.desc a {
+    display: inline-block;
+    padding: 0px;
+}
