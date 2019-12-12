@@ -47,13 +47,14 @@ function toggle_menu(open) {
                     <div>Meny</div>
                 </button>
             </div>
-            <div id="search">
+            <div id="search" open="true">
 
                 <form>                    
                     <a href="javascript:void(0)" class="drop_down"><div>Alla ämnen</div></a>
-                    <input class="search_box" type="text" name="search" placeholder="Sök"></input>
+                    <input class="search_box" type="text" name="search" placeholder="Sök" size="1"></input>
+                    <button class="search_cancel" onclick="toggle_search(false)" type="button">Avbryt</button>
                 </form>
-                <button class="search_cancel" onclick="toggle_search(false)">Avbryt</button>
+                
             </div>
         </div>
 
@@ -859,7 +860,7 @@ function toggle_menu(open) {
         </div>
      </footer>
 
-    <div class="drawer">
+    <div class="drawer" open="false">
         <header>
             <button onclick="toggle_menu(false)">
                 <img src="temp_close.png">

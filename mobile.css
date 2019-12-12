@@ -32,6 +32,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    min-width: 0;
 }
 
 .mobile_top_container > #search {
@@ -39,12 +40,8 @@
     grid-column: 1;
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     background-color: #36ced5;
-    overflow: hidden;
+    /* overflow: hidden; */
     transition: bottom 0.3s ease-in-out;    
     position: relative;
     bottom: 100%;
@@ -55,43 +52,50 @@
 }
 
 #search form {
-    flex-grow: 2;
+    font-size: 8pt;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    margin-left: 16pt;
+    justify-content: left;
+    flex-wrap: nowrap;
+    min-width: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .search_box {
+    font-size: 8pt;
     height: 24pt;
-    background-image: url("temp_search.png");
-    background-position: 0px 0px;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-
+    
     padding: 0;
-    padding-left: 28pt;
-
+    padding-left: 8pt;
     border-width: 2pt;
     border-top-right-radius: 10pt;
     border-bottom-right-radius: 10pt;
     border-color: black;
     border-style: solid;
-    min-width: 0px;
-    flex-grow: 1;
-    display: flex;
+    max-block-size: none;
+    min-width: none;
+    min-inline-size: 0%;
+    flex: 1 10 1em;
 }
 
-.search_box:active {
+.search_box:placeholder-shown {
     background-image: url("temp_search.png");
+    background-position: 0px 0px;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    padding-left: 28pt;
 }
 
+.drop_down * {
+    font-size: 8pt;
+}
 .drop_down {
+    
     height: 24pt;
     background-color: #b9fbfe;
 
-    width: 100pt;
     color: #16989e;
 
     border-width: 2pt;
@@ -107,19 +111,21 @@
     background-size: 15pt auto;
 
     text-decoration: none;
-
     display: flex;
     flex-flow: column;
     align-items: left;
     justify-content: center;
-
     padding-left: 8pt;
+    padding-right: 20pt;
+
 }
 
 button.search_cancel {
     margin: 16pt;
     font-size: 8pt;
     color: white;
+    height: auto;
+    flex: 0 0 40px;
 }
 
 section > div > header {
