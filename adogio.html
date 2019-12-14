@@ -18,9 +18,10 @@
 </head>
 
 <body>
+    
         <div class="banner mobile_top_container">
             <div class="mobile_top">
-                <a href="http://adogio.com/sv/" style="text-decoration: none; font-size:50px">ADOgio</a>
+                <a href="http://adogio.com/sv/" style="text-decoration: none; font-size:50px"><img src='Logo_vit_text.svg'></a>
                 <div class="filler"></div>
                 <button class="top" onclick="document.getElementById('search').setAttribute('open', 'true')">
                     <img src="temp_search.png">
@@ -43,7 +44,6 @@
                 
             </div>
         </div>
-
         <div class="banner screen_top" style="background-color:rgb(238, 238, 238); border-bottom:18px solid #cc0000">
             <div>
                 <div class="topheader">
@@ -917,7 +917,7 @@
      </footer>
 
     <div id="menu" open="false">
-        <div class="menu_shadow"></div>
+        <div class="menu_shadow" onclick="this.parentElement.setAttribute('open', 'false')"></div>
         <div class="drawer">
             <header>
                 <button onclick="document.getElementById('menu').setAttribute('open', 'false');">
@@ -931,11 +931,11 @@
                 <li><a href="adogio.html">+ Second</a></li>
                 <li><a href="adogio.html">+ Third</a></li>
                 <div class="desc">
-                    <div class="header">Så funkar det | </div>
+                    <div class="header">SÅ FUNKAR DET | </div>
                     Adigio är en bla bla bla där du som användare kan bla bla bla <a href="#about"> Läs mer här</a>
                 </div>
-                <li><a href="adogio.html">Om adigio</a></li>
-                <li><a href="adogio.html">Kontakta oss</a></li>
+                <li class="bold"><a href="adogio.html">Om adigio</a></li>
+                <li class="bold"><a href="adogio.html">Kontakta oss</a></li>
             </ul>
         </div>
     </div>
