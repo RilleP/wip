@@ -268,8 +268,13 @@
 </main>
     <section class='layout1'>
         <div>
-            <header>Aktuellt</header>
-            <div>                
+            <header>
+                <div class="left line" />
+                </div><img src="icons/Ikon_BlaLjus.png">Aktuellt
+                <div class="right line" />
+                </div>
+            </header>
+            <div class="main_list">                
             <ul>
 
     <li>
@@ -406,8 +411,13 @@
 
     <section class='layout3'>
         <div>
-            <header>Nyheter</header>
-            <div>                
+            <header>
+                <div class="left line" />
+                </div><img src="icons/Ikon_Nyheter.png">NYHETER
+                <div class="right line" />
+                </div>
+            </header>
+            <div class="main_list">                
             <ul>
 
     <li>
@@ -544,8 +554,13 @@
 
     <section class='layout2'>
         <div>
-            <header>Allsvenskan</header>
-            <div>                
+            <header>
+                <div class="left line" />
+                </div><img src="icons/Ikon_Sport.png">Damallsvenskan
+                <div class="right line" />
+                </div>
+            </header>
+            <div class="main_list">                
             <ul>
 
     <li>
@@ -752,8 +767,13 @@
 
     <section class='layout3'>
         <div>
-            <header>Damallsvenskan</header>
-            <div>                
+            <header>
+                <div class="left line" />
+                </div><img src="icons/Ikon_Sport.png">Damallsvenskan
+                <div class="right line" />
+                </div>
+            </header>
+            <div class="main_list">                
             <ul>
 
     <li>
@@ -971,7 +991,9 @@
         </div>
      </footer>
 
-    <div id="menu" class="drawer" open="false">
+    <div id="menu" open="false">
+    <div class="menu_shadow"></div>
+    <div class="drawer">
         <header>
             <button onclick="document.getElementById('menu').setAttribute('open', 'false');">
                 <img src="temp_close.png">
@@ -979,21 +1001,19 @@
             </button>
         </header>
         <ul>
-            <li>First</li>
-            <li>Second</li>
-            <li>Third</li>
+            <li><a href="adogio.html">
+                    < Sport</a> </li>
+            <li><a href="adogio.html">+ First</a></li>
+            <li><a href="adogio.html">+ Second</a></li>
+            <li><a href="adogio.html">+ Third</a></li>
+            <div class="desc">
+                <div class="header">Så funkar det | </div>
+                Adigio är en bla bla bla där du som användare kan bla bla bla <a href="#about"> Läs mer här</a>
+            </div>
+            <li><a href="adogio.html">Om adigio</a></li>
+            <li><a href="adogio.html">Kontakta oss</a></li>
         </ul>
-        <ul>
-            <li>
-                < Sport</li> </ul> <ul>
-                    <div class="desc">
-                        <div class="header">Så funkar det | </div>
-                        Adigio är en bla bla bla där du som användare kan bla bla bla <a href="#about"> Läs mer här</a>
-                    </div>
-            <li>Om adigio</li>
-            <li>Kontakta oss</li>
-        </ul>
-    
+    </div>
     </div>
 </body>
 </html>

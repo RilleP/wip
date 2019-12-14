@@ -3,13 +3,34 @@
     margin: 0;
     padding: 0;
 }
-
+.menu_shadow {
+    transition: opacity 0.5 linear;
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5)
+}
 .drawer li {
     display: flex;
-    padding: 16pt;
     margin: 0;
     text-decoration: none;
     color: black;
+}
+
+.drawer li > a {
+    padding: 16pt;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.drawer li > a:nth-child(n+1) {
+    color: #22989d;
 }
 
 .drawer {
@@ -19,10 +40,14 @@
     top: 0;
     width: 50%;
     height: 100%;
-    transition: all 0.2s ease-out;
+    transition: left 0.2s ease-out;
 }
 
-.drawer[open=false] {
+#menu[open=true] .menu_shadow {
+    opacity: 1;
+    visibility: visible;
+}
+#menu[open=false] .drawer {
     left: 100%;
 }
 

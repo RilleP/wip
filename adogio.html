@@ -22,7 +22,7 @@
             <div class="mobile_top">
                 <a href="http://adogio.com/sv/" style="text-decoration: none; font-size:50px">ADOgio</a>
                 <div class="filler"></div>
-                <button class="top" onclick="document.getElementById('search').element.setAttribute('true')">
+                <button class="top" onclick="document.getElementById('search').setAttribute('open', 'true')">
                     <img src="temp_search.png">
                 
                     <div>Sök</div>
@@ -51,18 +51,28 @@
                 </div>   
              </div>
         </div>
+        <div class="banner tabs_top">
+            <div>
+                <ul>
+                    <li><a href="#top" style="color: #36ced5"><img src='icons/Toppnyhet_vald.png'><div>Toppnyheter</div></a></li>
+                    <li><a href="#top"><img src='icons/Rekommenderad.png'>Rekomenderat</a></li>
+                    <li><a href="#top"><img src='icons/Popularast.png'>Populärast</a></li>
+                </ul>
+            </div>
+            
+        </div>
 
 
     <section class='layout1'>
         <div>
-            <header><div class="left line"/></div><img src="temp_icon.png">SENASTE NYTT<div class="right line"/></div></header>
-            <div>                
+            <header><div class="left line"/></div><img src="icons/Ikon_Nyheter.png">SENASTE NYTT<div class="right line"/></div></header>
+            <div class="main_list">                
             <ul>
 
     <li>
         <a href="F.191117.02001900531003">
             <div>
-                <header>Tim Ternebrink – stor matchvinnare</header> 
+                <div class="category">SPORT |&nbsp;</div><header>Tim Ternebrink – stor matchvinnare</header> 
                 <p>Tim Ternebrink bidrog starkt till segern för Onsala (P19) mot Varbergs (P19) genom att göra tre mål. Matchen slutade…</p> 
             </div>
         </a>
@@ -70,7 +80,7 @@
     <li>
         <a href="F.191117.02001900526003">
             <div>
-                <header>Albin Hellqvist fixade segern</header> 
+                <div class="category">SPORT |&nbsp;</div><header> Albin Hellqvist fixade segern</header> 
                 <p>Stor matchvinnare - Albin Hellqvist med två mål. Norrköping (P19) vann med 4-1 mot Hammarby T (P19).    Inte bara en, uta…</p> 
             </div>
         </a>
@@ -78,7 +88,7 @@
     <li>
         <a href="F.191117.02001900522004">
             <div>
-                <header>Sandviken hade ingen chans </header> 
+                <div class="category">SPORT |&nbsp;</div><header> Sandviken hade ingen chans </header> 
                 <p>Inget snack, 6-0 till Djursholm (P19) och en klar seger. Stor hjälp fanns i Gustav Lindgren – via fyra fullträffar.    Gäst…</p> 
             </div>
         </a>
@@ -225,6 +235,42 @@
                 <div class="button_container"></div><button class="more">Fler nyheter</button></div>
             </div>
         </div>
+
+        <div class="suggestionsbox">
+            <div class="title">Vi tror även att du skulle gilla....</div>
+            <ul>
+                <li><a href="artikel.html">
+                    <img src="http://adogio.com/images/swe__savedalens_if_rod_400x250.jpg" alt="swe  savedalens if rod">
+                    <p>Christian Dejanovic bidrog starkt till segern för Sävedalens Röd mot Landvetter P05 genom att göra två mål.
+                        Matchen sl…</p>
+                </a></li>
+                <li><a href="artikel.html">
+                        <img src="http://adogio.com/images/swe__savedalens_if_rod_400x250.jpg" alt="swe  savedalens if rod">
+                        <p>Christian Dejanovic bidrog starkt till segern för Sävedalens Röd mot Landvetter P05 genom att göra två mål.
+                            Matchen sl…</p>
+                    </a></li>
+                <li><a href="artikel.html">
+                        <img src="http://adogio.com/images/swe__savedalens_if_rod_400x250.jpg" alt="swe  savedalens if rod">
+                        <p>Christian Dejanovic bidrog starkt till segern för Sävedalens Röd mot Landvetter P05 genom att göra två mål.
+                            Matchen sl…</p>
+                    </a></li>
+                <li><a href="artikel.html">
+                        <img src="http://adogio.com/images/swe__savedalens_if_rod_400x250.jpg" alt="swe  savedalens if rod">
+                        <p>Christian Dejanovic bidrog starkt till segern för Sävedalens Röd mot Landvetter P05 genom att göra två mål.
+                            Matchen sl…</p>
+                    </a></li>
+                <li><a href="artikel.html">
+                        <img src="http://adogio.com/images/swe__savedalens_if_rod_400x250.jpg" alt="swe  savedalens if rod">
+                        <p>Christian Dejanovic bidrog starkt till segern för Sävedalens Röd mot Landvetter P05 genom att göra två mål.
+                            Matchen sl…</p>
+                    </a></li>
+                <li><a href="artikel.html">
+                        <img src="http://adogio.com/images/swe__savedalens_if_rod_400x250.jpg" alt="swe  savedalens if rod">
+                        <p>Christian Dejanovic bidrog starkt till segern för Sävedalens Röd mot Landvetter P05 genom att göra två mål.
+                            Matchen sl…</p>
+                    </a></li>
+            </ul>
+        </div>
     </section>
 
 
@@ -234,11 +280,11 @@
         <div>
             <header>
                 <div class="left line" />
-                </div><img src="temp_icon.png">SPORT
+                </div><img src="icons/Ikon_Sport.png">SPORT
                 <div class="right line" />
                 </div>
             </header>
-            <div>                
+            <div class="main_list">                
             <ul>
 
     <li>
@@ -408,7 +454,7 @@
         </a>
     </li>
                 </ul>                
-                <button class="more">Mer sport</button>
+                <div class="button_container"></div><button class="more">Mer sport</button></div>
             </div>
         </div>
     </section>
@@ -420,14 +466,14 @@
         <div>
             <header>
                 <div class="left line" />
-                </div><img src="temp_icon.png">SPORT
+                </div><img src="icons/Ikon_Sport.png">SPORT
                 <div class="right line" />
                 </div>
             </header>
-            <div>                
+            <div class="main_list">                
             <ul>
 
-    <li>
+    <li class="double_row">
         <a href="F.191102.02001900001237">
                 <img src="http://adogio.com/images/swe__hammarby_400x250.jpg" alt="swe  hammarby">
                 <img src="http://adogio.com/images/swe__hammarby_400x125.jpg" alt="swe  hammarby">
@@ -436,14 +482,33 @@
                 <p>Hammarby vann på hemmaplan mot Häcken.   På lördagen möttes Hammarby och Häcken på Tele2 Arena.  Man inledde bäst, Ham…</p> 
             </div>
         </a>
-    </li>
-    <li>
-        <a href="F.191102.02001900001239">
-                <img src="http://adogio.com/images/swe__aik_400x250.jpg" alt="swe  aik">
-                <img src="http://adogio.com/images/swe__aik_400x125.jpg" alt="swe  aik">
+        <a href="F.191102.02001900001237">
+            <img src="http://adogio.com/images/swe__hammarby_400x250.jpg" alt="swe  hammarby">
+            <img src="http://adogio.com/images/swe__hammarby_400x125.jpg" alt="swe  hammarby">
             <div>
-                <header>Henok Goitom avgjorde på tilläggstid</header> 
-                <p>Matchklockan hade passerat 90. Då kom avgörandet. Henok Goitom gjorde 2-1 för AIK mot Sundsvall.   AIK som låg på…</p> 
+                <header>Hammarby vann mot Häcken med 4-1</header>
+                <p>Hammarby vann på hemmaplan mot Häcken. På lördagen möttes Hammarby och Häcken på Tele2 Arena. Man inledde
+                    bäst, Ham…</p>
+            </div>
+        </a>
+    </li>
+    <li class="double_row">
+        <a href="F.191102.02001900001237">
+            <img src="http://adogio.com/images/swe__hammarby_400x250.jpg" alt="swe  hammarby">
+            <img src="http://adogio.com/images/swe__hammarby_400x125.jpg" alt="swe  hammarby">
+            <div>
+                <header>Hammarby vann mot Häcken med 4-1</header>
+                <p>Hammarby vann på hemmaplan mot Häcken. På lördagen möttes Hammarby och Häcken på Tele2 Arena. Man inledde
+                    bäst, Ham…</p>
+            </div>
+        </a>
+        <a href="F.191102.02001900001239">
+            <img src="http://adogio.com/images/swe__aik_400x250.jpg" alt="swe  aik">
+            <img src="http://adogio.com/images/swe__aik_400x125.jpg" alt="swe  aik">
+            <div>
+                <header>Henok Goitom avgjorde på tilläggstid</header>
+                <p>Matchklockan hade passerat 90. Då kom avgörandet. Henok Goitom gjorde 2-1 för AIK mot Sundsvall. AIK som låg
+                    på…</p>
             </div>
         </a>
     </li>
@@ -631,31 +696,36 @@
 
     <section class='layout3'>
         <div>
-            <header>Damallsvenskan</header>
-            <div>                
+            <header>
+                <div class="left line" />
+                </div><img src="icons/Ikon_Sport.png">Damallsvenskan
+                <div class="right line" />
+                </div>
+            </header>
+            <div class="main_list">                
             <ul>
 
-    <li>
+    <li class="row">
         <a href="F.181027.02000000201129">
                 <img src="http://adogio.com/images/swe__kopparbergs-goteborg_fc_400x250.jpg" alt="swe  kopparbergs-goteborg fc">
                 <img src="http://adogio.com/images/swe__kopparbergs-goteborg_fc_400x125.jpg" alt="swe  kopparbergs-goteborg fc">
             <div>
-                <header>Seger för Kopparberg/Göteborg i svängmatch</header> 
+                <div class="category">FOTBOLL |&nbsp;</div><header>Seger för Kopparberg/Göteb</header> 
                 <p>Man hade haft likaläge, men Rosengård förlorade. Kopparberg/Göteborg vann med 4-2.    En riktig pangstart. D…</p> 
             </div>
         </a>
     </li>
-    <li>
+    <li class="row">
         <a href="F.181027.02000000201131">
                 <img src="http://adogio.com/images/swe__vittsjo_gik_400x250.jpg" alt="swe  vittsjo gik">
                 <img src="http://adogio.com/images/swe__vittsjo_gik_400x125.jpg" alt="swe  vittsjo gik">
             <div>
-                <header>Michelle de Jongh grejade tre poäng</header> 
+                <div class="category">FOTBOLL |&nbsp;</div><header>Michelle de Jongh grejade tre poäng</header> 
                 <p>Michelle de Jongh bidrog starkt till segern för Vittsjö mot Hammarby genom att göra två mål. Matchen slutade 3-0…</p> 
             </div>
         </a>
     </li>
-    <li>
+    <li class="row">
         <a href="F.181027.02000000201128">
             <div>
                 <header>Linköping och Kristianstad höll tätt</header> 
@@ -663,7 +733,7 @@
             </div>
         </a>
     </li>
-    <li>
+    <li class="row">
         <a href="F.181027.02000000201130">
                 <img src="http://adogio.com/images/swe__if_limhamn_bunkeflo_400x250.jpg" alt="swe  if limhamn bunkeflo">
                 <img src="http://adogio.com/images/swe__if_limhamn_bunkeflo_400x125.jpg" alt="swe  if limhamn bunkeflo">
@@ -846,31 +916,28 @@
         </div>
      </footer>
 
-    <div id="menu" class="drawer" open="false">
-        <header>
-            <button onclick="document.getElementById('menu').setAttribute('open', 'false');">
-                <img src="temp_close.png">
-                <div>Stäng</div>
-            </button>
-        </header>
-        <ul>
-            <li>First</li>
-            <li>Second</li>
-            <li>Third</li>
-        </ul>
-        <ul>
-            <li>< Sport</li>
-        </ul>
-        
-        <ul>
-            <div class="desc">
-                <div class="header">Så funkar det | </div>
-                Adigio är en bla bla bla där du som användare kan bla bla bla <a href="#about"> Läs mer här</a>
-            </div>
-            <li>Om adigio</li>
-            <li>Kontakta oss</li>
-        </ul>        
-        
+    <div id="menu" open="false">
+        <div class="menu_shadow"></div>
+        <div class="drawer">
+            <header>
+                <button onclick="document.getElementById('menu').setAttribute('open', 'false');">
+                    <img src="temp_close.png">
+                    <div>Stäng</div>
+                </button>
+            </header>
+            <ul>
+                <li><a href="adogio.html">
+                        < Sport</a> </li> <li><a href="adogio.html">+ First</a></li>
+                <li><a href="adogio.html">+ Second</a></li>
+                <li><a href="adogio.html">+ Third</a></li>
+                <div class="desc">
+                    <div class="header">Så funkar det | </div>
+                    Adigio är en bla bla bla där du som användare kan bla bla bla <a href="#about"> Läs mer här</a>
+                </div>
+                <li><a href="adogio.html">Om adigio</a></li>
+                <li><a href="adogio.html">Kontakta oss</a></li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
