@@ -293,8 +293,10 @@ a:active {
     font-size: 14pt;
 }
 
-.tags p, .tags button {
+.tags > p, .tags > button {
     padding-left: 8pt;
+    margin: 4pt 0;
+    height: auto;
 }
 
 .main_list li > a {
@@ -328,7 +330,6 @@ section li > a {
 }
 
 li.tag {
-    padding: 8pt;
     background: #ececec;
     display: flex;
     margin-bottom:2pt;
@@ -340,12 +341,17 @@ li.tag:active {
 }
 
 a.tag {
+    padding: 8pt;
     color: #f82900;
-    width: 50%;
+    flex: 1 1;
+    flex-basis: 100%;
 }
 
-.tag {
-    align-items: left;
+a.tag_arrow {
+    background-image: url('tag_arrow.png');
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    flex-basis: 50pt;
 }
 
 
@@ -355,6 +361,10 @@ a.tag {
     align-content: center;
     justify-items: stretch;
     justify-content: stretch;
+    padding: 0 8pt;
+}
+.check_container:active {
+    background: rgb(185, 185, 185);
 }
 .check {
     height: 100%;
@@ -366,11 +376,11 @@ a.tag {
 
 .checkmeout {
     margin-left: 4pt;
-    width: 16pt;
-    height: 16pt;
+    width: 14pt;
+    height: 14pt;
     border-style: solid;
-    border-width: 1pt;
-    border-color: black;
+    border-width: 1.5pt;
+    border-color: #979797;
     background: white;
 }
 
