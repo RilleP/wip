@@ -4,6 +4,14 @@
     padding: 0;
 }
 
+.drawer li {
+    display: flex;
+    padding: 16pt;
+    margin: 0;
+    text-decoration: none;
+    color: black;
+}
+
 .drawer {
     background-color: white;
     position: fixed;
