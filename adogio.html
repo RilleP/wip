@@ -37,7 +37,25 @@
             <div id="search" open="false">
 
                 <form>                    
-                    <a href="javascript:void(0)" class="drop_down"><div>Alla ämnen</div></a>
+                    <div class="drop_down">
+                        <button type="button">Alla ämnen</button>
+                        <div class="drop_down_content">
+                            <script>
+                                function drop_down_select(e) {
+                                    //e.setAttribute('selected', e.getAttribute('selected') == 'true' ? 'false' : 'true');
+                                    for (var i = 0; i < e.parentElement.children.length; i++) {
+                                        e.parentElement.children[i].setAttribute('selected', 'false');
+                                    }
+                                    e.setAttribute('selected', 'true');
+                                    e.parentElement.parentElement.children[0].innerHTML = e.innerHTML;
+                                }
+                            </script>
+                            <button type="button" selected='true' onclick="drop_down_select(this)">Alla ämnen</button>
+                            <button type="button" selected='false' onclick="drop_down_select(this)">Sport</button>
+                            <button type="button" selected='false' onclick="drop_down_select(this)">Politik</button>
+                            <button type="button" selected='false' onclick="drop_down_select(this)">Nöje</button>
+                        </div>
+                    </div>
                     <input class="search_box" type="text" name="search" placeholder="Sök" size="1"></input>
                     <button class="search_cancel" onclick="document.getElementById('search').setAttribute('open', 'false')" type="button">Avbryt</button>
                 </form>
@@ -65,7 +83,7 @@
 
     <section class='layout1'>
         <div>
-            <header><div class="left line"/></div><img src="icons/Ikon_Nyheter.png">SENASTE NYTT<div class="right line"/></div></header>
+            <header class="category"><div class="left line"/></div><img src="icons/Ikon_Nyheter.png">SENASTE NYTT<div class="right line"/></div></header>
             <div class="main_list">                
             <ul>
 
@@ -278,7 +296,7 @@
 
     <section class='layout3'>
         <div>
-            <header>
+            <header class="category">
                 <div class="left line" />
                 </div><img src="icons/Ikon_Sport.png">SPORT
                 <div class="right line" />
@@ -464,7 +482,7 @@
 
     <section class='layout2'>
         <div>
-            <header>
+            <header class="category">
                 <div class="left line" />
                 </div><img src="icons/Ikon_Sport.png">SPORT
                 <div class="right line" />
@@ -696,7 +714,7 @@
 
     <section class='layout3'>
         <div>
-            <header>
+            <header class="category">
                 <div class="left line" />
                 </div><img src="icons/Ikon_Sport.png">Damallsvenskan
                 <div class="right line" />
@@ -927,7 +945,9 @@
             </header>
             <ul>
                 <li><a href="adogio.html">
-                        < Sport</a> </li> <li><a href="adogio.html">+ First</a></li>
+                        <img src='arrow.png'><div>Sport</div>
+                </a></li> 
+                <li><a href="adogio.html">+ First</a></li>
                 <li><a href="adogio.html">+ Second</a></li>
                 <li><a href="adogio.html">+ Third</a></li>
                 <div class="desc">
