@@ -29,6 +29,10 @@
     width: 100%;
     height: 60pt;
     display: grid;    
+    border-bottom-width: 1pt;
+    border-bottom-color: #7f7f7f;
+    border-bottom-style: solid;
+    
 }
 
 .mobile_top {
@@ -51,7 +55,7 @@
 }
 
 .tabs_top li {
-    margin: 8pt 16pt;
+    margin: 8pt 0;
     border: none;
 }
 
@@ -668,10 +672,6 @@ div.time {
 div.league {
     font-size: 10pt;
     font-weight: bold;
-}
-
-article {
-    max-width: 420pt;
 }
 
 article > img {
