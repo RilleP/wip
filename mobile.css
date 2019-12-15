@@ -543,7 +543,11 @@ button:focus {
     outline: none;
 }
 
+
 section {
+    /* display: flex; */
+    display: block;
+    flex-direction: column;
     box-shadow: 0 8pt 0 0 rgba(0, 0, 0, 0.5), 0 3pt 3pt 0 rgba(0, 0, 0, 0.5);
     padding-bottom: 8pt;
     padding-top: 8pt;
@@ -552,23 +556,13 @@ section {
     border-bottom-style: solid; */
 }
 
-section.layout1 .main_list li:nth-child(n+4) {
-    display: none;
-}
-
-section.layout2 .main_list li:nth-child(n+4) {
-    display: none;
-}
-
-section.layout3 .main_list li:nth-child(n+4) {
-    display: none;
-}
-section.layout4 .main_list li:nth-child(n+4) {
+.main_list li:nth-child(n+4) {
     display: none;
 }
 
 .button_container {
-    display: inline-flex;
+    margin-top: 8pt;
+    flex: 1 0 100pt;
 }
 
 article > div {

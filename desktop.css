@@ -72,3 +72,40 @@ a.top {
     font-size: 8pt;
     font-weight: bold;
 }
+
+@media screen and (min-width: 1000px) {
+    section {
+        box-shadow: 1pt 1pt 5pt 0 rgba(0, 0, 0, 0.5);
+        margin: 4pt;
+    }
+
+    .grid {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        display: inline-grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+    .layout1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row: 1;
+    }
+
+    .layout2 {
+        grid-column: 3;
+        grid-row-start: 1; 
+        grid-row-end: 10;
+    }
+
+    .layout3 {
+        grid-column: 2;
+        grid-row: 2; 
+    }
+
+    .layout4 {
+        grid-column: 1;
+        grid-row: 2; 
+    }
+
+}
