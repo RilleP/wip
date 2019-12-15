@@ -6,6 +6,8 @@
 <title>Linköping Tinni tillbaka på vinnarspåret | 2019-12-11</title> 
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="mobile.css">
+<link rel="stylesheet" type="text/css" href="desktop.css">
+<link rel="stylesheet" type="text/css" href="categories.css">
 <link rel="stylesheet" type="text/css" href="menu.css">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -16,77 +18,123 @@
 <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-        <div class="banner mobile_top_container">
-            <div class="mobile_top">
-                <a href="http://adogio.com/sv/" style="text-decoration: none; font-size:50px"><img src='Logo_vit_text.svg'></a>
-                <div class="filler"></div>
-                <button class="top" onclick="document.getElementById('search').setAttribute('open', 'true')">
-                    <img src="temp_search.png">
-        
-                    <div>Sök</div>
-                </button>
-                <button class="top" onclick="document.getElementById('menu').setAttribute('open', 'true');">
-                    <img src="temp_menu.png">
-        
-                    <div>Meny</div>
-                </button>
-            </div>
-            <div id="search" open="false">
-                <form>
-                    <div class="drop_down">
-                        <button type="button">Alla ämnen</button>
-                        <div class="drop_down_content">
-                            <script>
-                                function drop_down_select(e) {
-                                    //e.setAttribute('selected', e.getAttribute('selected') == 'true' ? 'false' : 'true');
-                                    for (var i = 0; i < e.parentElement.children.length; i++) {
-                                        e.parentElement.children[i].setAttribute('selected', 'false');
+        <div class="banner top">
+            <div class="mobile_top_container centered">
+                <div class="mobile_top">
+                    <a href="http://adogio.com/sv/" class="logo"><img src='Logo_vit_text.svg'></a>
+                    <div class="filler"></div>
+                    <button class="top mobile_only" onclick="document.getElementById('search').setAttribute('open', 'true')">
+                        <img src="temp_search.png">
+                
+                        <div>Sök</div>
+                    </button>
+                    <button class="top mobile_only" onclick="document.getElementById('menu').setAttribute('open', 'true');">
+                        <img src="temp_menu.png">
+                
+                        <div>Meny</div>
+                    </button>
+                    <a class="top desktop_only" href="#about">Adogio</a>
+                    <a class="top desktop_only" href="#contact">Kontakta oss</a>
+                    <div class="filler desktop_only"></div>
+                </div>
+                <div id="search" open="false">
+                    <form>
+                        <div class="drop_down">
+                            <button type="button">Alla ämnen</button>
+                            <div class="drop_down_content">
+                                <script>
+                                    function drop_down_select(e) {
+                                        //e.setAttribute('selected', e.getAttribute('selected') == 'true' ? 'false' : 'true');
+                                        for (var i = 0; i < e.parentElement.children.length; i++) {
+                                            e.parentElement.children[i].setAttribute('selected', 'false');
+                                        }
+                                        e.setAttribute('selected', 'true');
+                                        e.parentElement.parentElement.children[0].innerHTML = e.innerHTML;
                                     }
-                                    e.setAttribute('selected', 'true');
-                                    e.parentElement.parentElement.children[0].innerHTML = e.innerHTML;
-                                }
-                            </script>
-                            <button type="button" selected='true' onclick="drop_down_select(this)">Alla ämnen</button>
-                            <button type="button" selected='false' onclick="drop_down_select(this)">Sport</button>
-                            <button type="button" selected='false' onclick="drop_down_select(this)">Politik</button>
-                            <button type="button" selected='false' onclick="drop_down_select(this)">Nöje</button>
+                                </script>
+                                <button type="button" selected='true' onclick="drop_down_select(this)">Alla ämnen</button>
+                                <button type="button" selected='false' onclick="drop_down_select(this)">Sport</button>
+                                <button type="button" selected='false' onclick="drop_down_select(this)">Politik</button>
+                                <button type="button" selected='false' onclick="drop_down_select(this)">Nöje</button>
+                            </div>
                         </div>
-                    </div>
-                    <input class="search_box" type="text" name="search" placeholder="Sök" size="1"></input>
-                    <button class="search_cancel" onclick="document.getElementById('search').setAttribute('open', 'false')"
-                        type="button">Avbryt</button>
-                </form>
-        
-            </div>
-        </div>
-        <div class="banner screen_top" style="background-color:rgb(238, 238, 238); border-bottom:18px solid #cc0000">
-            <div>
-                <div class="topheader">
-                    <a href="http://adogio.com/sv/" style="text-decoration: none;color:#dd0000; font-size:48px">adogio</a>
+                        <input class="search_box" type="text" name="search" placeholder="Sök" size="1"></input>
+                        <button class="search_cancel" onclick="document.getElementById('search').setAttribute('open', 'false')"
+                            type="button">Avbryt</button>
+                    </form>
+                
                 </div>
             </div>
         </div>
-        <div class="banner tabs_top">
-            <div>
-                <ul>
-                    <li><a href="#top" style="color: #36ced5"><img src='icons/Toppnyhet_vald.png'>
-                            <div>Toppnyheter</div>
-                        </a></li>
-                    <div class="filler"></div>
-                    <li><a href="#top"><img src='icons/Rekommenderad.png'>Rekomenderat</a></li>
-                    <div class="filler"></div>
-                    <li><a href="#top"><img src='icons/Popularast.png'>Populärast</a></li>
-                </ul>
+        <div class="banner  desktop_only">
+            <div class="centered">
+                <div class="desktop_menu">
+                    <div class="menu_link" selected="true"><a class="icon" href="#"><img src="temp_home.png"></a>
+                        <div class="line"></div>
+                    </div>
+                    <div class="menu_link" selected="true"><a href="#">SPORT</a>
+                        <div class="line"></div>
+                    </div>
+                    <div class="menu_link"><a href="#">NÖJEN</a>
+                        <div class="line"></div>
+                    </div>
+                    <div class="menu_link"><a href="#">KLIMAT</a>
+                        <div class="line"></div>
+                    </div>
+                    <div class="menu_link"><a href="#">EKONOMI</a>
+                        <div class="line"></div>
+                    </div>
+                    <div class="menu_link"><a href="#">BLÅLJUS</a>
+                        <div class="line"></div>
+                    </div>
+                    <div class="menu_link"><a href="#">VÄLJARBAROMETER</a>
+                        <div class="line"></div>
+                    </div>
+                    <div class="menu_link"><a href="#">ARBETSMARKNAD</a>
+                        <div class="line"></div>
+                    </div>
+                    <div id="search" open="false">
+                        <form>
+                            <div class="drop_down">
+                                <button type="button">Alla ämnen</button>
+                                <div class="drop_down_content">
+                                    <script>
+                                        function drop_down_select(e) {
+                                            //e.setAttribute('selected', e.getAttribute('selected') == 'true' ? 'false' : 'true');
+                                            for (var i = 0; i < e.parentElement.children.length; i++) {
+                                                e.parentElement.children[i].setAttribute('selected', 'false');
+                                            }
+                                            e.setAttribute('selected', 'true');
+                                            e.parentElement.parentElement.children[0].innerHTML = e.innerHTML;
+                                        }
+                                    </script>
+                                    <button type="button" selected='true' onclick="drop_down_select(this)">Alla ämnen</button>
+                                    <button type="button" selected='false' onclick="drop_down_select(this)">Sport</button>
+                                    <button type="button" selected='false' onclick="drop_down_select(this)">Politik</button>
+                                    <button type="button" selected='false' onclick="drop_down_select(this)">Nöje</button>
+                                </div>
+                            </div>
+                            <input class="search_box" type="text" name="search" placeholder=" " size="1"></input>
+                            <button class="search">Sök</button>
+                        </form>
+                    
+                    </div>
+                </div>
             </div>
-        </div>
-
-
+        </div>     
+        <div class="breadcrumbs">
+            <a href="#">Startsida</a>
+            <div></div>
+            <a href="#">Sport</a>
+            <div></div>
+            <a>Fotboll</a>
+        </div>   
 <main>
-    <section class='article'>
+    <section class='article blaljus'>
         <div>
             <header class="category">
                 <div class="left line" />
-                </div>FOTBOLL
+                </div><img>FOTBOLL
                 <div class="right line" />
                 </div>
             </header>
@@ -145,13 +193,16 @@
                 
                 
                 <div class='standings'>
+                    <header class="category">
+                        <div class="line" />
+                        </div><div class="header_text">Futsal DM F 17</div>
+                        <div class="line" />
+                        </div>
+                    </header>
                     <table>
-                        <tr>
-                            <th colspan="9" class="league">Futsal DM F 17</th>
-                        </tr>
-                        <tr>
-                            <th style="text-align: left"></th>
-                            <th style="text-align: left">Lag</th>
+                        <tr>                            
+                            <th></th>
+                            <th>Lag</th>
                             <th>S</th>
                             <th>V</th>
                             <th>O</th>
@@ -160,72 +211,72 @@
                             <th>+/-</th>
                             <th>P</th>
                         </tr>
-                
                         <tr>
-                            <td style="text-align: left">1</td>
-                            <td style="text-align: left; font-weight:bold">Lindö FF</td>
+                            <td><img src="table_icon2.png"></td>
+                            <td>1 Lindö FF</td>
                             <td>5</td>
                             <td>4</td>
                             <td>0</td>
                             <td>1</td>
                             <td>17-3</td>
                             <td>14</td>
-                            <td style="font-weight:bold">12</td>
+                            <td>12</td>
                         </tr>
+                        
                         <tr>
-                            <td style="text-align: left">2</td>
-                            <td style="text-align: left; font-weight:bold">Smedby AIS</td>
+                            <td><img src="table_icon1.png"></td>
+                            <td>2 Smedby AIS</td>
                             <td>5</td>
                             <td>4</td>
                             <td>0</td>
                             <td>1</td>
                             <td>9-4</td>
                             <td>5</td>
-                            <td style="font-weight:bold">12</td>
+                            <td>12</td>
                         </tr>
                         <tr>
-                            <td style="text-align: left">3</td>
-                            <td style="text-align: left; font-weight:bold">BK Kenty</td>
+                            <td><img src="table_icon1.png"></td>
+                            <td>3 BK Kenty</td>
                             <td>4</td>
                             <td>2</td>
                             <td>0</td>
                             <td>2</td>
                             <td>7-9</td>
                             <td>-2</td>
-                            <td style="font-weight:bold">6</td>
+                            <td>6</td>
                         </tr>
                         <tr>
-                            <td style="text-align: left">4</td>
-                            <td style="text-align: left; font-weight:bold">Mantorps FF</td>
+                            <td><img src="table_icon1.png"></td>
+                            <td>4 Mantorps FF</td>
                             <td>4</td>
                             <td>1</td>
                             <td>0</td>
                             <td>3</td>
                             <td>7-8</td>
                             <td>-1</td>
-                            <td style="font-weight:bold">3</td>
+                            <td>3</td>
                         </tr>
                         <tr>
-                            <td style="text-align: left">5</td>
-                            <td style="text-align: left; font-weight:bold">Borens IK</td>
+                            <td><img src="table_icon1.png"></td>
+                            <td>5 Borens IK</td>
                             <td>4</td>
                             <td>1</td>
                             <td>0</td>
                             <td>3</td>
                             <td>5-11</td>
                             <td>-6</td>
-                            <td style="font-weight:bold">3</td>
+                            <td>3</td>
                         </tr>
                         <tr>
-                            <td style="text-align: left">6</td>
-                            <td style="text-align: left; font-weight:bold">Linköping BK Tinnis</td>
+                            <td><img src="table_icon1.png"></td>
+                            <td>6 Linköping BK Tinnis</td>
                             <td>4</td>
                             <td>1</td>
                             <td>0</td>
                             <td>3</td>
                             <td>4-14</td>
                             <td>-10</td>
-                            <td style="font-weight:bold">3</td>
+                            <td>3</td>
                         </tr>
                     </table>
                 </div>
@@ -293,11 +344,11 @@
         </div>
     </section>
 </main>
-    <section class='layout1'>
+    <section class='layout1 sport'>
         <div>
             <header class="category">
                 <div class="left line">
-                </div><img src="icons/Ikon_BlaLjus.png">Aktuellt
+                </div><img>Aktuellt
                 <div class="right line">
                 </div>
             </header>
@@ -436,11 +487,11 @@
 
 
 
-    <section class='layout3'>
+    <section class='layout3 news'>
         <div>
             <header class="category">
                 <div class="left line" />
-                </div><img src="icons/Ikon_Nyheter.png">NYHETER
+                </div><img>NYHETER
                 <div class="right line" />
                 </div>
             </header>
@@ -579,11 +630,11 @@
 
 
 
-    <section class='layout2'>
+    <section class='layout2 sport'>
         <div>
             <header class="category">
                 <div class="left line" />
-                </div><img src="icons/Ikon_Sport.png">Damallsvenskan
+                </div><img>DAMALLSVENSKAN
                 <div class="right line" />
                 </div>
             </header>
@@ -792,11 +843,11 @@
 
 
 
-    <section class='layout3'>
+    <section class='layout3 blaljus'>
         <div>
             <header class="category">
                 <div class="left line" />
-                </div><img src="icons/Ikon_Sport.png">Damallsvenskan
+                </div><img>HERRALLSVENSKAN
                 <div class="right line" />
                 </div>
             </header>

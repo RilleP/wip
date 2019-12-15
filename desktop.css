@@ -1,0 +1,74 @@
+.desktop_menu {
+    display: flex;
+    background-color: #36ced5;
+    align-items: flex-end;
+    padding-bottom: 4pt;
+    margin-left: 24px;
+}
+
+.desktop_menu #search {
+    flex: 1 1 100pt;
+    margin-right: 24px;
+}
+
+.desktop_menu .search_box:placeholder-shown {
+    background-image: url("temp_search_grey.png");
+    background-position: 90% 50%;
+    background-size: auto 60%;
+    background-repeat: no-repeat;
+    padding-left: 8pt;
+}
+
+.desktop_menu button.search {
+    margin-left: 4pt;
+    color: white;
+}
+
+.desktop_menu button.search:hover {
+    color: rgb(236, 236, 236);
+}
+
+.desktop_menu button.search:active {
+    color: rgb(214, 214, 214);
+}
+
+.menu_link {
+    display: flex;
+    flex-direction: column;
+    margin: 4pt;
+}
+
+.menu_link > a {
+    font-size: 12pt;
+    margin-bottom: 4pt;
+}
+.menu_link a.icon {
+    margin-bottom: 0;
+}
+
+
+.desktop_menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.desktop_menu .line {
+    background: none;
+    height: 2px;
+}
+
+.menu_link[selected='true'] .line {
+    background-color: white;
+}
+.menu_link[selected='true'] a {
+    font-weight: bold;
+}
+
+a.top {
+    text-decoration: none;
+    color: black;
+    margin-top: 16pt;
+    margin-right: 8pt;
+    font-size: 8pt;
+    font-weight: bold;
+}

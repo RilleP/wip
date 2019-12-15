@@ -1,0 +1,109 @@
+
+/* ---------------------- NYHETER ----------------------*/
+section.news header.category img {
+    content: url("icons/Ikon_Nyheter.png");
+}
+
+section.news header {
+    color: #e37f36;
+}
+
+.news :-webkit-any(h1, a.tag, .category, span.dateline, .teams) {
+    color: #f52c00;
+}
+
+section.news  div.line {
+    background-color: #f52c00;
+}
+
+.news :-webkit-any(.resultbox, .standings, li.tag) {
+    background-color: #ecdefc;
+}
+
+section.news button.more {
+    border-color: #f52c00;
+    color: #f52c00;
+}
+
+section.news button:hover {
+    color: #e37f36;
+    border-color: #e37f36;
+}
+section.news button:active {
+    color: #f2bfb4;
+    border-color: #f2bfb4;
+}
+
+
+/* ---------------------- SPORT ----------------------*/
+section.sport header.category img {
+    
+    content: url("icons/Ikon_Sport.png");
+}
+
+section.sport header {
+    color: #a72985;
+}
+
+.sport :-webkit-any(h1, a.tag, .category, span.dateline, .teams) {
+    color: #4c25a0;
+}
+
+section.sport  div.line {
+    background-color: #4c25a0;
+}
+
+.sport :-webkit-any(.resultbox, .standings, li.tag) {
+    background-color: #ecdefc;
+}
+
+section.sport button.more {
+    border-color: #4c25a0;
+    color: #4c25a0;
+}
+
+section.sport button:hover {
+    color: #a72985;
+    border-color: #a72985;
+}
+section.sport button:active {
+    color: #c9bde2;
+    border-color: #c9bde2;
+}
+
+/*---------------------- BLÅLJUS ----------------------*/
+section.blaljus header.category img {
+    content: url("icons/Ikon_BlaLjus.png");
+}
+
+section.blaljus header {
+    color: #63aefb;
+}
+
+.blaljus :-webkit-any(h1, a.tag, .category, span.dateline, .teams) {
+    color: #375abb;
+}
+
+section.blaljus  div.line {
+    background-color: #375abb;
+}
+
+.blaljus :-webkit-any(.resultbox, .standings, li.tag) {
+    background-color: #c2cdeb;
+}
+
+section.blaljus button.more {
+    border-color: #375abb;
+    color: #375abb;
+}
+
+section.blaljus button:hover {
+    color: #63aefb;
+    border-color: #63aefb;
+}
+section.blaljus button:active {
+    color: #c2cdeb;
+    border-color: #c2cdeb;
+}
+
+/* TODO: Nöjen, Klimat, Ekonomi, Väljarbarometer, Arbetsmarknad */

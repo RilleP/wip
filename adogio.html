@@ -6,6 +6,8 @@
 <title>adogio</title> 
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" type="text/css" href="mobile.css">
+<link rel="stylesheet" type="text/css" href="desktop.css">
+<link rel="stylesheet" type="text/css" href="categories.css">
 <link rel="stylesheet" type="text/css" href="menu.css">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -19,57 +21,111 @@
 
 <body>
     
-        <div class="banner mobile_top_container">
-            <div class="mobile_top">
-                <a href="http://adogio.com/sv/" style="text-decoration: none; font-size:50px"><img src='Logo_vit_text.svg'></a>
-                <div class="filler"></div>
-                <button class="top" onclick="document.getElementById('search').setAttribute('open', 'true')">
-                    <img src="temp_search.png">
-                
-                    <div>Sök</div>
-                </button>
-                <button class="top" onclick="document.getElementById('menu').setAttribute('open', 'true');">
-                    <img src="temp_menu.png">
-                
-                    <div>Meny</div>
-                </button>
-            </div>
-            <div id="search" open="false">
-
-                <form>                    
-                    <div class="drop_down">
-                        <button type="button">Alla ämnen</button>
-                        <div class="drop_down_content">
-                            <script>
-                                function drop_down_select(e) {
-                                    //e.setAttribute('selected', e.getAttribute('selected') == 'true' ? 'false' : 'true');
-                                    for (var i = 0; i < e.parentElement.children.length; i++) {
-                                        e.parentElement.children[i].setAttribute('selected', 'false');
+        <div class="banner top">
+            <div class="mobile_top_container centered">
+                <div class="mobile_top">
+                    <a href="http://adogio.com/sv/" class="logo"><img src='Logo_vit_text.svg'></a>
+                    <div class="filler"></div>
+                    <button class="top mobile_only" onclick="document.getElementById('search').setAttribute('open', 'true')">
+                        <img src="temp_search.png">
+        
+                        <div>Sök</div>
+                    </button>
+                    <button class="top mobile_only" onclick="document.getElementById('menu').setAttribute('open', 'true');">
+                        <img src="temp_menu.png">
+        
+                        <div>Meny</div>
+                    </button>
+                    <a class="top desktop_only" href="#about">Adogio</a>
+                    <a class="top desktop_only" href="#contact">Kontakta oss</a>
+                    <div class="filler desktop_only"></div>
+                </div>
+                <div id="search" open="false">
+                    <form>
+                        <div class="drop_down">
+                            <button type="button">Alla ämnen</button>
+                            <div class="drop_down_content">
+                                <script>
+                                    function drop_down_select(e) {
+                                        //e.setAttribute('selected', e.getAttribute('selected') == 'true' ? 'false' : 'true');
+                                        for (var i = 0; i < e.parentElement.children.length; i++) {
+                                            e.parentElement.children[i].setAttribute('selected', 'false');
+                                        }
+                                        e.setAttribute('selected', 'true');
+                                        e.parentElement.parentElement.children[0].innerHTML = e.innerHTML;
                                     }
-                                    e.setAttribute('selected', 'true');
-                                    e.parentElement.parentElement.children[0].innerHTML = e.innerHTML;
-                                }
-                            </script>
-                            <button type="button" selected='true' onclick="drop_down_select(this)">Alla ämnen</button>
-                            <button type="button" selected='false' onclick="drop_down_select(this)">Sport</button>
-                            <button type="button" selected='false' onclick="drop_down_select(this)">Politik</button>
-                            <button type="button" selected='false' onclick="drop_down_select(this)">Nöje</button>
+                                </script>
+                                <button type="button" selected='true' onclick="drop_down_select(this)">Alla ämnen</button>
+                                <button type="button" selected='false' onclick="drop_down_select(this)">Sport</button>
+                                <button type="button" selected='false' onclick="drop_down_select(this)">Politik</button>
+                                <button type="button" selected='false' onclick="drop_down_select(this)">Nöje</button>
+                            </div>
                         </div>
-                    </div>
-                    <input class="search_box" type="text" name="search" placeholder="Sök" size="1"></input>
-                    <button class="search_cancel" onclick="document.getElementById('search').setAttribute('open', 'false')" type="button">Avbryt</button>
-                </form>
-                
+                        <input class="search_box" type="text" name="search" placeholder="Sök" size="1"></input>
+                        <button class="search_cancel" onclick="document.getElementById('search').setAttribute('open', 'false')"
+                            type="button">Avbryt</button>
+                    </form>
+        
+                </div>
             </div>
         </div>
-        <div class="banner screen_top" style="background-color:rgb(238, 238, 238); border-bottom:18px solid #cc0000">
-            <div>
-                <div class="topheader">
-                    <a href="http://adogio.com/sv/" style="text-decoration: none;color:#dd0000; font-size:48px">adogio</a>
-                </div>   
-             </div>
+        <div class="banner  desktop_only">
+            <div class="centered">
+                <div class="desktop_menu">
+                    <div class="menu_link" selected="true"><a class="icon" href="#"><img src="temp_home.png"></a>
+                        <div class="line"></div>
+                    </div>
+                    <div class="menu_link" selected="true"><a href="#">SPORT</a>
+                        <div class="line"></div>
+                    </div>
+                    <div class="menu_link"><a href="#">NÖJEN</a>
+                        <div class="line"></div>
+                    </div>
+                    <div class="menu_link"><a href="#">KLIMAT</a>
+                        <div class="line"></div>
+                    </div>
+                    <div class="menu_link"><a href="#">EKONOMI</a>
+                        <div class="line"></div>
+                    </div>
+                    <div class="menu_link"><a href="#">BLÅLJUS</a>
+                        <div class="line"></div>
+                    </div>
+                    <div class="menu_link"><a href="#">VÄLJARBAROMETER</a>
+                        <div class="line"></div>
+                    </div>
+                    <div class="menu_link"><a href="#">ARBETSMARKNAD</a>
+                        <div class="line"></div>
+                    </div>
+                    <div id="search" open="false">
+                        <form>
+                            <div class="drop_down">
+                                <button type="button">Alla ämnen</button>
+                                <div class="drop_down_content">
+                                    <script>
+                                        function drop_down_select(e) {
+                                            //e.setAttribute('selected', e.getAttribute('selected') == 'true' ? 'false' : 'true');
+                                            for (var i = 0; i < e.parentElement.children.length; i++) {
+                                                e.parentElement.children[i].setAttribute('selected', 'false');
+                                            }
+                                            e.setAttribute('selected', 'true');
+                                            e.parentElement.parentElement.children[0].innerHTML = e.innerHTML;
+                                        }
+                                    </script>
+                                    <button type="button" selected='true' onclick="drop_down_select(this)">Alla ämnen</button>
+                                    <button type="button" selected='false' onclick="drop_down_select(this)">Sport</button>
+                                    <button type="button" selected='false' onclick="drop_down_select(this)">Politik</button>
+                                    <button type="button" selected='false' onclick="drop_down_select(this)">Nöje</button>
+                                </div>
+                            </div>
+                            <input class="search_box" type="text" name="search" placeholder=" " size="1"></input>
+                            <button class="search">Sök</button>
+                        </form>
+        
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="banner tabs_top">
+        <div class="tabs_top">
             <div>
                 <ul>
                     <li><a href="#top" style="color: #36ced5"><img src='icons/Toppnyhet_vald.png'><div>Toppnyheter</div></a></li>
@@ -82,9 +138,9 @@
         </div>
 
 
-    <section class='layout1'>
+    <section class='layout1 news'>
         <div>
-            <header class="category"><div class="left line"/></div><img src="icons/Ikon_Nyheter.png">SENASTE NYTT<div class="right line"/></div></header>
+            <header class="category"><div class="left line"/></div><img>SENASTE NYTT<div class="right line"/></div></header>
             <div class="main_list">                
             <ul>
 
@@ -295,11 +351,11 @@
 
 
 
-    <section class='layout3'>
+    <section class='layout3 sport'>
         <div>
             <header class="category">
                 <div class="left line" />
-                </div><img src="icons/Ikon_Sport.png">SPORT
+                </div><img>SPORT
                 <div class="right line" />
                 </div>
             </header>
@@ -481,11 +537,11 @@
 
 
 
-    <section class='layout2'>
+    <section class='layout2 blaljus'>
         <div>
             <header class="category">
                 <div class="left line" />
-                </div><img src="icons/Ikon_Sport.png">SPORT
+                </div><img>SPORT
                 <div class="right line" />
                 </div>
             </header>
@@ -713,11 +769,11 @@
 
 
 
-    <section class='layout3'>
+    <section class='layout3 news'>
         <div>
             <header class="category">
                 <div class="left line" />
-                </div><img src="icons/Ikon_Sport.png">Damallsvenskan
+                </div><img>Damallsvenskan
                 <div class="right line" />
                 </div>
             </header>
@@ -730,7 +786,7 @@
                 <img src="http://adogio.com/images/swe__kopparbergs-goteborg_fc_400x125.jpg" alt="swe  kopparbergs-goteborg fc">
             <div>
                 <div class="category">FOTBOLL |&nbsp;</div><header>Seger för Kopparberg/Göteb</header> 
-                <p>Man hade haft likaläge, men Rosengård förlorade. Kopparberg/Göteborg vann med 4-2.    En riktig pangstart. D…</p> 
+                <p class="max_three_lines">Man hade haft likaläge, men Rosengård förlorade. Kopparberg/Göteborg vann med 4-2.    En riktig pangstart. D…</p> 
             </div>
         </a>
     </li>
