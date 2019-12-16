@@ -240,7 +240,7 @@ section > div > header {
     font-size: 14pt;
     display: flex;
     align-items: center;
-    margin: 8pt 0;
+    padding: 8pt 0;
 }
 
 
@@ -258,6 +258,11 @@ section > div > header {
     margin: 0 4pt;
 }
 
+section .icon {
+    width: 20pt;
+    height: 20pt;
+    margin-right: 4pt; 
+}
 section > div > header > img {
     width: 20pt;
     height: 20pt;
@@ -318,6 +323,10 @@ a:active {
     padding: 16pt 0;
 }
 
+.main_list li:first-child a {
+    padding-top: 0;
+} 
+
 .main_list li > a > div {
     padding-left: 16pt;
     padding-right: 16pt;
@@ -345,30 +354,31 @@ section li > a {
 }
 
 li.tag {
-    background: #ececec;
     display: flex;
     margin-bottom:2pt;
     align-items: stretch;
 }
 
-li.tag:active {
-    background: rgb(207, 207, 207);
-}
-
 a.tag {
     padding: 8pt;
-    color: #f82900;
     flex: 1 1;
     flex-basis: 100%;
 }
 
 a.tag_arrow {
-    background-image: url('tag_arrow.png');
-    background-repeat: no-repeat;
-    background-position: 90% 50%;
     flex-basis: 50pt;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
+
+.tag_arrow polyline {
+    fill: none;
+    stroke: black;
+    stroke-width: 2pt;
+    stroke-linecap: round;
+}
 
 .check_container {
     display: flex;
@@ -378,9 +388,9 @@ a.tag_arrow {
     justify-content: stretch;
     padding: 0 8pt;
 }
-.check_container:active {
+/* .check_container:active {
     background: rgb(185, 185, 185);
-}
+} */
 .check {
     height: 100%;
     padding: 0;
@@ -414,15 +424,26 @@ li > a > div {
     display: inline-block;
 }
 
+li > a > div > .header {
+    font-weight: bold;
+}
+
+
 li > a > div > header {
+    font-weight: bold;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+li > a > div > span.category {
     font-weight: bold;
     display: inline-block;
 }
 
-li > a > div > div.category {
-    font-weight: bold;
-    display: inline-block;
-}
+/* TO MAKE A NEW LINE AFTER CATEGORY */
+/* li > a > div > span.category {
+    display:block;
+} */
 
 .main_list a > img[src*="400x125"] {
     display: none;
@@ -433,16 +454,167 @@ li > a > div > div.category {
     height: auto;
     margin-bottom: 8pt;
 }
+
+
+
+/* .main_list .row > a > div > p, .main_list .double_row > a > div > p {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 3;
+} */
+
+/* .row {
+    display: flex;
+    flex-direction: column;
+}
+.main_list .row a {
+    padding-left: 16pt;
+    padding-right: 16pt;
+    display: flex;
+    flex-direction: row;
+}
+
+.main_list .row img {
+    width: 60pt;
+    height: 60pt;
+    padding-right: 8pt;
+}
+
+.main_list .row > a > div {
+    padding-left: 0pt;
+    padding-right: 0pt;
+}
+
+.main_list .row > a > div * {
+    padding-left: 0pt;
+    padding-right: 0pt;
+    display: inline;
+} */
+
+:-webkit-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) {
+    display: flex;
+    flex-direction: column;
+}
+
+:-webkit-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) a {
+    padding-left: 16pt;
+    padding-right: 16pt;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+:-webkit-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) img {
+    width: 60pt;
+    height: 60pt;
+    padding-right: 8pt;
+}
+
+:-webkit-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) > a > div {
+    padding-left: 0;
+    padding-right: 0;
+    max-height: 45pt;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 3;
+}
+
+:-webkit-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) > a > div * {
+    padding-left: 0;
+    padding-right: 0;
+    display: inline;
+}
+
+/* Copy paste for firefox */
+:-moz-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) {
+    display: flex;
+    flex-direction: column;
+}
+
+:-moz-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) a {
+    padding-left: 16pt;
+    padding-right: 16pt;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+:-moz-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) img {
+    width: 60pt;
+    height: 60pt;
+    padding-right: 8pt;
+}
+
+:-moz-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) > a > div {
+    padding-left: 0;
+    padding-right: 0;
+    max-height: 45pt;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+   -moz-box-orient: vertical;
+   -moz-line-clamp: 3;
+}
+
+:-moz-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) > a > div * {
+    padding-left: 0;
+    padding-right: 0;
+    display: inline;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .layout1 .main_list li:nth-child(n + 2):not(.double_row) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .layout1 .main_list li:nth-child(n + 2):not(.double_row) a {
+        padding-left: 16pt;
+        padding-right: 16pt;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .layout1 .main_list li:nth-child(n + 2):not(.double_row) img {
+        width: 60pt;
+        height: 60pt;
+        padding-right: 8pt;
+    }
+
+    .layout1 .main_list li:nth-child(n + 2):not(.double_row) > a > div {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .layout1 .main_list li:nth-child(n + 2):not(.double_row) > a > div * {
+        padding-left: 0;
+        padding-right: 0;
+        display: inline;
+    }
+}
 .double_row {
     padding-left: 8pt;
     padding-right: 8pt;
     
     display: flex;
+    flex-direction: row;
 }
+
+.double_row img {
+    width: 100%;
+    height: auto;
+}
+
 .main_list .double_row > a {
     padding-left: 8pt;
     padding-right: 8pt;
     display: flex;
+    flex-direction: column; 
     flex: 1 1 0px;
     width: 0;
     flex-wrap: nowrap;
@@ -458,44 +630,6 @@ li > a > div > div.category {
 
 .main_list .double_row > a > div * {
     line-break: strict;
-}
-
-
-.main_list .row > a > div > p, .main_list .double_row > a > div > p {
-   overflow: hidden;
-   text-overflow: ellipsis;
-   display: -webkit-box;
-   -webkit-box-orient: vertical;
-   -webkit-line-clamp: 3; /* number of lines to show */
-}
-
-.row {
-    display: flex;
-    flex-direction: column;
-}
-.main_list .row a {
-    padding-left: 16pt;
-    padding-right: 16pt;
-    display: flex;
-    flex-direction: row;
-}
-
-.main_list .row img {
-    width: 60pt;
-    height: 60pt;
-    /* flex: 1 1 100px; */
-    padding-right: 8pt;
-}
-
-.main_list .row > a > div {
-    padding-left: 0pt;
-    padding-right: 0pt;
-}
-
-.main_list .row > a > div * {
-    padding-left: 0pt;
-    padding-right: 0pt;
-    display: inline;
 }
 
 button {
@@ -556,9 +690,9 @@ section {
     border-bottom-style: solid; */
 }
 
-.main_list li:nth-child(n+4) {
+/* .main_list li:nth-child(n+4) {
     display: none;
-}
+} */
 
 .button_container {
     margin-top: 8pt;
@@ -610,11 +744,15 @@ span.dateline {
 .sharebox {
     display: flex;
     flex-direction: row;
-    align-items: center;
 }
 
-.sharebox * {
+.sharebox a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
     font-weight: bold;
+    color: black;
 }
 
 .sharebox img {
@@ -631,7 +769,6 @@ span.dateline {
 }
 
 .resultbox > .teams {
-    color: #f52c00;
     font-weight: bold;
     font-size: 16pt;
     margin-top: 4pt;
@@ -661,9 +798,20 @@ span.dateline {
     flex-direction: column;
 }
 
+.suggestionsbox li img {
+    height: 80pt;
+}
+
 .suggestionsbox p {
     margin-top: 8pt;
     font-weight: bold;
+
+    max-height: 45pt;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 3;
 }
 
 .suggestionsbox li {

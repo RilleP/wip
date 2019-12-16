@@ -1,12 +1,103 @@
+.news {
+    --color_dark: #f52c00;
+    --color_mid: #e37f36;
+    --color_light: #f2bfb4;
+    --color_lightest: #f8d2ca;
+    --color_tag_hover: #f0c1b6;
+    --color_tag_pressed: #e6b5aa;
+    --icon: url("icons/Ikon_Nyheter.png");
+}
+.blaljus {
+    --color_dark: #375abb;
+    --color_mid: #63aefb;
+    --color_light: #c2cdeb;
+    --color_lightest: #d1daf3;
+    --color_tag_hover: #adb6cf;
+    --color_tag_pressed: #b6c1df;
+
+    --icon: url("icons/Ikon_BlaLjus.png");
+}
+
+.sport {
+    --color_dark: #4c25a0;
+    --color_mid: #a72985;
+    --color_light: #c9bde2;
+    --color_lightest: #ecdefc;
+    --color_tag_hover: #d0c4e9;
+    --color_tag_pressed: #beb2d6;
+    --icon: url("icons/Ikon_Sport.png");
+}
+
+section header.category img {
+    content:var(--icon) !important;
+}
+
+header.category .icon {
+    background-image: var(--icon);
+    background-size: 100% 100%;
+}
+
+section .header {
+    color: var(--color_mid) !important;
+}
+
+:-webkit-any(h1, a.tag, .category, span.dateline, .teams) {
+    color: var(--color_dark) !important;
+}
+:-moz-any(h1, a.tag, .category, span.dateline, .teams) {
+    color: var(--color_dark) !important;
+}
+
+section  div.line {
+    background-color: var(--color_dark) !important;
+}
+
+ :-webkit-any(.resultbox, .standings, li.tag) {
+    background-color: var(--color_light) !important;
+}
+ :-moz-any(.resultbox, .standings, li.tag) {
+    background-color: var(--color_lightest) !important;
+}
+
+section button.more {
+    border-color: var(--color_dark) !important;
+    color: var(--color_dark) !important;
+}
+
+section button:hover {
+    color: var(--color_mid) !important;
+    border-color: var(--color_mid) !important;
+}
+section button:active {
+    color: var(--color_light) !important;
+    border-color: var(--color_light) !important;
+}
+
+ .tag:hover {
+    background-color: var(--color_tag_hover) !important;
+}
+
+ .tag:active {
+    background-color: var(--color_tag_pressed) !important;
+}
+
+ .tag_arrow polyline {
+    stroke: var(--color_dark) !important;
+}
 
 /* ---------------------- NYHETER ----------------------*/
-section.news header.category img {
+
+
+
+
+/* section.news header.category img {
     content: url("icons/Ikon_Nyheter.png");
 }
 
-section.news header {
+section.news .header {
     color: #e37f36;
 }
+
 
 .news :-webkit-any(h1, a.tag, .category, span.dateline, .teams) {
     color: #f52c00;
@@ -17,7 +108,7 @@ section.news  div.line {
 }
 
 .news :-webkit-any(.resultbox, .standings, li.tag) {
-    background-color: #ecdefc;
+    background-color: #f2bfb4;
 }
 
 section.news button.more {
@@ -34,49 +125,82 @@ section.news button:active {
     border-color: #f2bfb4;
 }
 
+.news .tag:hover {
+    background-color: #f2bfb4;
+}
+
+.news .tag:active {
+    background-color: #e6b5aa;
+}
+
+.news .tag_arrow polyline {
+    stroke: #f52c00;
+} */
+
 
 /* ---------------------- SPORT ----------------------*/
-section.sport header.category img {
-    
-    content: url("icons/Ikon_Sport.png");
+/* section.sport header.category img {
+    content: url("icons/Ikon_Sport.png") !important;
+} */
+
+/* img:after {
+    content: url("icons/Ikon_Sport.png") !important;
+}
+section.sport .header {
+    color: #a72985 !important;
 }
 
-section.sport header {
-    color: #a72985;
+.sport :-moz-any(h1, a.tag, .category, span.dateline, .teams) {
+    color: #4c25a0 !important;
 }
-
 .sport :-webkit-any(h1, a.tag, .category, span.dateline, .teams) {
-    color: #4c25a0;
+    color: #4c25a0 !important;
 }
+
 
 section.sport  div.line {
-    background-color: #4c25a0;
+    background-color: #4c25a0 !important;
 }
 
+.sport :-moz-any(.resultbox, .standings, li.tag) {
+    background-color: #ecdefc !important;
+}
 .sport :-webkit-any(.resultbox, .standings, li.tag) {
-    background-color: #ecdefc;
+    background-color: #ecdefc !important;
 }
 
 section.sport button.more {
-    border-color: #4c25a0;
-    color: #4c25a0;
+    border-color: #4c25a0 !important;
+    color: #4c25a0 !important;
 }
 
-section.sport button:hover {
-    color: #a72985;
-    border-color: #a72985;
+.sport .tag:hover {
+    background-color: #c9bde2 !important;
+}
+
+.sport .tag:active {
+    background-color: #bdb1d6 !important;
+}
+
+section.sport :-webkit-any(button, a):hover {
+    color: #a72985 !important;
+    border-color: #a72985 !important;
 }
 section.sport button:active {
-    color: #c9bde2;
-    border-color: #c9bde2;
+    color: #c9bde2 !important;
+    border-color: #c9bde2 !important;
 }
 
+.sport .tag_arrow polyline {
+    stroke: #4c25a0 !important;
+} */
+
 /*---------------------- BLÅLJUS ----------------------*/
-section.blaljus header.category img {
+/* section.blaljus header.category img {
     content: url("icons/Ikon_BlaLjus.png");
 }
 
-section.blaljus header {
+section.blaljus .header {
     color: #63aefb;
 }
 
@@ -105,5 +229,17 @@ section.blaljus button:active {
     color: #c2cdeb;
     border-color: #c2cdeb;
 }
+
+.blaljus .tag:hover {
+    background-color: #c2cdeb;
+}
+
+.blaljus .tag:active {
+    background-color: #b4beda;
+}
+
+.blaljus .tag_arrow polyline {
+    stroke: #375abb;
+} */
 
 /* TODO: Nöjen, Klimat, Ekonomi, Väljarbarometer, Arbetsmarknad */
