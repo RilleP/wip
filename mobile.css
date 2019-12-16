@@ -370,7 +370,7 @@ li.tag {
 }
 
 a.tag {
-    padding: 8px;
+    padding: 16px;
     flex: 1 1;
     flex-basis: 100%;
 }
@@ -380,6 +380,8 @@ a.tag_arrow {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 
