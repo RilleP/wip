@@ -7,14 +7,14 @@ and (max-width : 320px) {
 
 .breadcrumbs {
     display: flex;
-    margin: 8pt 8pt;
+    margin: 8px 8px;
     margin-bottom: 0;
 }
 
 .breadcrumbs a {
     color: #16989e;
     text-decoration: none;
-    margin: 0 8pt;
+    margin: 0 8px;
 }
 
 .breadcrumbs a:link {
@@ -23,8 +23,8 @@ and (max-width : 320px) {
 
 
 .breadcrumbs > div {
-    width: 1.5pt;
-    height: 16pt;
+    width: 1.5px;
+    height: 16px;
     background-color: #a0a0a0;
 }
 .banner {
@@ -39,7 +39,7 @@ and (max-width : 320px) {
 }
 
 .banner.top {
-    border-bottom-width: 1pt;
+    border-bottom-width: 1px;
     border-bottom-color: #7f7f7f;
     border-bottom-style: solid;
 }

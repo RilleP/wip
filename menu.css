@@ -22,8 +22,8 @@
 }
 
 .drawer li > a {
-    font-size: 16pt;
-    padding: 10pt 24pt;
+    font-size: 16px;
+    padding: 10px 24px;
     width: 100%;
     height: 100%;
     text-decoration: none;
@@ -32,15 +32,15 @@
 }
 
 .drawer li.bold > a {
-    font-size: 14pt;
-    padding: 10pt 24pt;
+    font-size: 14px;
+    padding: 10px 24px;
     font-weight: bold;
 }
 
 .drawer li:first-child > a {
     color: #22989d;
     font-weight: bold;
-    border-top: 1pt solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
 }
 
 .drawer {
@@ -48,7 +48,7 @@
     position: fixed;
     right: 0;
     top: 0;
-    width: 200pt;
+    width: 200px;
     height: 100%;
     transition: right 0.2s ease-out;
     box-shadow: 0px 0 8px rgba(0, 0, 0, 0.2);
@@ -59,21 +59,21 @@
     visibility: visible;
 }
 #menu[open=false] .drawer {
-    right: -200pt;
+    right: -200px;
 }
 
 .drawer > header {
     display: flex;
     flex-direction: row-reverse;
-    margin: 20pt;
+    margin: 20px;
 }
 
 .drawer > header button div {
-    font-size: 8pt;
+    font-size: 8px;
 }
 
 .desc {
-    padding: 24pt;
+    padding: 24px;
     background-color: #22989d;
     color: white;
 }

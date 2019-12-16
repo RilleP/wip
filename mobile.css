@@ -3,7 +3,7 @@
 * {
     margin: 0;
     font-family: 'Roboto Slab', sans-serif;
-   /*  font-size: 14pt; */
+   /*  font-size: 14px; */
 }
 
 @media screen and (max-width: 600px) {
@@ -15,10 +15,14 @@
 @media screen and (min-width: 599px) {
 }
 
+:root {
+    --header_height: 100px;
+}
+
 .mobile_top_container {
     background-color: #36ced5;
     width: 100%;
-    height: 50pt;
+    height: var(--header_height);
     display: grid;            
 }
 .screen_top {
@@ -26,16 +30,16 @@
 }
 
 .logo {
-    flex: 1 0 30pt;
+    flex: 1 0 100px;
     display: flex;
     margin-left: 24px;
     color: #fff;
 }
 
 .logo > img {
-    max-height: 50pt;
+    max-height: var(--header_height);
     width: 0;
-    flex: 0 1 150pt;
+    flex: 0 1 350px;
 }
 
 
@@ -44,7 +48,7 @@
     grid-row:1;
     grid-column: 1;
     width: 100%;
-    height: 50pt;
+    height: var(--header_height);
     display: flex;
     align-content: center;
     align-items: center;
@@ -62,7 +66,7 @@
 }
 
 .tabs_top li {
-    margin: 8pt 0;
+    margin: 16px 0;
     border: none;
 }
 
@@ -76,15 +80,15 @@
 }
 
 .tabs_top img {
-    width: 20pt;
-    height: 20pt;
+    width: 30px;
+    height: 30px;
 }
 
 .mobile_top_container > #search {
     grid-row:1;
     grid-column: 1;
     width: 100%;
-    height: 50pt;
+    height: var(--header_height);
     background-color: #36ced5;
     /* overflow: hidden; */
     transition: bottom 0.2s ease-out;    
@@ -97,7 +101,7 @@
 }
 
 #search form {
-    font-size: 8pt;
+    font-size: 8px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -109,14 +113,14 @@
 }
 
 .search_box {
-    font-size: 10pt;
-    height: 24pt;
+    font-size: 10px;
+    height: 24px;
     
     padding: 0;
-    padding-left: 8pt;
-    border-width: 1.5pt;
-    border-top-right-radius: 10pt;
-    border-bottom-right-radius: 10pt;
+    padding-left: 8px;
+    border-width: 1.5px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     border-color: #096063;
     border-style: solid;
     max-block-size: none;
@@ -127,10 +131,10 @@
 
 .search_box:placeholder-shown {
     background-image: url("temp_search_grey.png");
-    background-position: 4pt 50%;
+    background-position: 4px 50%;
     background-size: auto 60%;
     background-repeat: no-repeat;
-    padding-left: 20pt;
+    padding-left: 20px;
 }
 
 .search_box:focus {
@@ -142,23 +146,23 @@
 }
 
 .drop_down {
-    height: 27pt;
+    height: 27px;
     display: block;
-    margin-left: 8pt;
+    margin-left: 8px;
 }
 
 .drop_down * {
-    font-size: 10pt;
+    font-size: 14px;
 }
 .drop_down > button {
-    height: 27pt;
+    height: 27px;
     background-color: #b9fbfe;
 
     color: #16989e;
 
-    border-width: 1.5pt;
-    border-top-left-radius: 10pt;
-    border-bottom-left-radius: 10pt;
+    border-width: 1.5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     border-color: #096063;
     border-style: solid;
     border-right: none;
@@ -167,12 +171,12 @@
     background-position: 90% 50%;
     background-origin: border-box;
     background-repeat: no-repeat;
-    background-size: 12pt auto;
+    background-size: 12px auto;
 
     text-decoration: none;
     align-items: left;
-    padding-left: 8pt;
-    padding-right: 20pt;
+    padding-left: 8px;
+    padding-right: 20px;
     
 }
 
@@ -187,22 +191,22 @@
 
 .drop_down_content > button {
     border-width: 0;
-    border-left-width: 1.5pt;
-    border-right-width: 1.5pt;
+    border-left-width: 1.5px;
+    border-right-width: 1.5px;
     border-color: #096063;
     border-style: solid;
 
     background: #b9fbfe;
-    height: 24pt;
+    height: 24px;
     text-align: left;
-    padding-left: 20pt;
-    padding-right: 8pt;
+    padding-left: 20px;
+    padding-right: 8px;
 }
 
 .drop_down_content > button:last-child {
-    border-bottom-width: 1.5pt;
-    border-bottom-right-radius: 10pt;
-    border-bottom-left-radius: 10pt;
+    border-bottom-width: 1.5px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     border-color: #096063;
     border-style: solid;
 }
@@ -217,7 +221,7 @@
     background-image: url('temp_check_white.png');
     background-repeat: no-repeat;
     background-size: auto 60%;
-    background-position: 4pt 50%;
+    background-position: 4px 50%;
 }
 
 .drop_down:hover .drop_down_content {
@@ -229,8 +233,8 @@
 }
 
 button.search_cancel {
-    margin: 8pt;
-    font-size: 8pt;
+    margin: 8px;
+    font-size: 8px;
     color: white;
     height: auto;
     flex: 0 0 40px;
@@ -239,10 +243,10 @@ button.search_cancel {
 section > div > header {
     /* color: red; @COLOR*/
     font-weight: 900;
-    font-size: 14pt;
+    font-size: 16px;
     display: flex;
     align-items: center;
-    padding: 8pt 0;
+    padding: 8px 0;
 }
 
 
@@ -250,25 +254,25 @@ section > div > header {
     width: 100%;
     /* color: red; @COLOR*/ 
     font-weight: bold;
-    font-size: 14pt;
+    font-size: 14px;
     display: flex;
     align-items: center;
-    margin: 8pt 0;
+    margin: 8px 0;
 }
 
 .standings .header_text {
-    margin: 0 4pt;
+    margin: 0 4px;
 }
 
 section .icon {
-    width: 20pt;
-    height: 20pt;
-    margin-right: 4pt; 
+    width: 20px;
+    height: 20px;
+    margin-right: 4px; 
 }
 section > div > header > img {
-    width: 20pt;
-    height: 20pt;
-    margin-right: 4pt; 
+    width: 20px;
+    height: 20px;
+    margin-right: 4px; 
 }
 
 
@@ -282,15 +286,15 @@ section > div > header > img {
 }
 
 .left {
-    width: 16pt;
-    margin-right: 4pt;
+    width: 16px;
+    margin-right: 4px;
 }
 
 .right {
     width: 100%;
     flex: 1;
     text-align: center;
-    margin-left: 4pt;
+    margin-left: 4px;
 }
 
 li {
@@ -310,19 +314,19 @@ a:active {
 
 .tags {
     padding: 0;
-    margin: 8pt 0;
+    margin: 8px 0;
     font-weight: bold;
-    font-size: 14pt;
+    font-size: 14px;
 }
 
 .tags > p, .tags > button {
-    padding-left: 8pt;
-    margin: 4pt 0;
+    padding-left: 8px;
+    margin: 4px 0;
     height: auto;
 }
 
 .main_list li > a {
-    padding: 16pt 0;
+    padding: 16px 0;
 }
 
 .main_list li:first-child a {
@@ -334,8 +338,8 @@ a:active {
 }
 
 .main_list li > a > div {
-    padding-left: 16pt;
-    padding-right: 16pt;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 section li > a {
@@ -356,23 +360,23 @@ section li > a {
 
 .show_more {
     font-weight: bold;
-    font-size: 14pt;
+    font-size: 14px;
 }
 
 li.tag {
     display: flex;
-    margin-bottom:2pt;
+    margin-bottom:2px;
     align-items: stretch;
 }
 
 a.tag {
-    padding: 8pt;
+    padding: 8px;
     flex: 1 1;
     flex-basis: 100%;
 }
 
 a.tag_arrow {
-    flex-basis: 50pt;
+    flex-basis: 50px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -382,7 +386,7 @@ a.tag_arrow {
 .tag_arrow polyline {
     fill: none;
     stroke: black;
-    stroke-width: 2pt;
+    stroke-width: 2px;
     stroke-linecap: round;
 }
 
@@ -392,7 +396,7 @@ a.tag_arrow {
     align-content: center;
     justify-items: stretch;
     justify-content: stretch;
-    padding: 0 8pt;
+    padding: 0 8px;
 }
 /* .check_container:active {
     background: rgb(185, 185, 185);
@@ -406,11 +410,11 @@ a.tag_arrow {
 }
 
 .checkmeout {
-    margin-left: 4pt;
-    width: 14pt;
-    height: 14pt;
+    margin-left: 4px;
+    width: 14px;
+    height: 14px;
     border-style: solid;
-    border-width: 1.5pt;
+    border-width: 1.5px;
     border-color: #979797;
     background: white;
 }
@@ -458,7 +462,7 @@ li > a > div > span.category {
 .main_list img {
     width: 100%;
     height: auto;
-    margin-bottom: 8pt;
+    margin-bottom: 8px;
 }
 
 
@@ -476,26 +480,26 @@ li > a > div > span.category {
     flex-direction: column;
 }
 .main_list .row a {
-    padding-left: 16pt;
-    padding-right: 16pt;
+    padding-left: 16px;
+    padding-right: 16px;
     display: flex;
     flex-direction: row;
 }
 
 .main_list .row img {
-    width: 60pt;
-    height: 60pt;
-    padding-right: 8pt;
+    width: 60px;
+    height: 60px;
+    padding-right: 8px;
 }
 
 .main_list .row > a > div {
-    padding-left: 0pt;
-    padding-right: 0pt;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .main_list .row > a > div * {
-    padding-left: 0pt;
-    padding-right: 0pt;
+    padding-left: 0px;
+    padding-right: 0px;
     display: inline;
 } */
 
@@ -505,23 +509,23 @@ li > a > div > span.category {
 }
 
 :-webkit-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) a {
-    padding-left: 16pt;
-    padding-right: 16pt;
+    padding-left: 16px;
+    padding-right: 16px;
     display: flex;
     flex-direction: row;
     overflow: hidden;
 }
 
 :-webkit-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) img {
-    width: 60pt;
-    height: 60pt;
-    padding-right: 8pt;
+    width: 60px;
+    height: 60px;
+    padding-right: 8px;
 }
 
 :-webkit-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) > a > div {
     padding-left: 0;
     padding-right: 0;
-    max-height: 45pt;
+    max-height: 45px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -542,23 +546,23 @@ li > a > div > span.category {
 }
 
 :-moz-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) a {
-    padding-left: 16pt;
-    padding-right: 16pt;
+    padding-left: 16px;
+    padding-right: 16px;
     display: flex;
     flex-direction: row;
     overflow: hidden;
 }
 
 :-moz-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) img {
-    width: 60pt;
-    height: 60pt;
-    padding-right: 8pt;
+    width: 60px;
+    height: 60px;
+    padding-right: 8px;
 }
 
 :-moz-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) > a > div {
     padding-left: 0;
     padding-right: 0;
-    max-height: 45pt;
+    max-height: 45px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -moz-box;
@@ -580,16 +584,16 @@ li > a > div > span.category {
     }
 
     .layout1 .main_list li:nth-child(n + 2):not(.double_row) a {
-        padding-left: 16pt;
-        padding-right: 16pt;
+        padding-left: 16px;
+        padding-right: 16px;
         display: flex;
         flex-direction: row;
     }
 
     .layout1 .main_list li:nth-child(n + 2):not(.double_row) img {
-        width: 60pt;
-        height: 60pt;
-        padding-right: 8pt;
+        width: 60px;
+        height: 60px;
+        padding-right: 8px;
     }
 
     .layout1 .main_list li:nth-child(n + 2):not(.double_row) > a > div {
@@ -604,8 +608,8 @@ li > a > div > span.category {
     }
 }
 .double_row {
-    padding-left: 8pt;
-    padding-right: 8pt;
+    padding-left: 8px;
+    padding-right: 8px;
     
     display: flex;
     flex-direction: row;
@@ -617,8 +621,8 @@ li > a > div > span.category {
 }
 
 .main_list .double_row > a {
-    padding-left: 8pt;
-    padding-right: 8pt;
+    padding-left: 8px;
+    padding-right: 8px;
     display: flex;
     flex-direction: column; 
     flex: 1 1 0px;
@@ -630,8 +634,17 @@ li > a > div > span.category {
 .main_list .double_row > a > div {
     display: flex;
     flex-direction: column;
-    padding-left: 0pt;
-    padding-right: 0pt;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.main_list .double_row > a > div > p {
+    max-height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 3;
 }
 
 .main_list .double_row > a > div * {
@@ -642,7 +655,7 @@ button {
     text-align: center;
     border-style: none;
     background: none;
-    height: 32pt;
+    height: 32px;
 }
 
 button.top {
@@ -653,32 +666,32 @@ button.top {
     align-content: center;
     margin: 0px;
     height: fit-content;
-    margin-right: 24pt;
+    margin-right: 24px;
 }
 
 .filler {
-    flex: 0.25 1 1pt;
+    flex: 0.25 1 1px;
     text-align: center;
 }
 
 button.top > img {
-    width: 20pt;
+    width: 30px;
 }
 
 button.top > div {
-    font-size: 8pt;
+    font-size: 10px;
 }
 
 button.more {
     border-color: black;
-    border-width: 1.5pt;
-    width: 175pt;
+    border-width: 2px;
+    width: 175px;
     padding: 0px;
     margin: 0 auto;
-    margin-bottom: 16pt;
+    margin-bottom: 16px;
     display: block;
     border-style: solid;
-    font-size: 14pt;
+    font-size: 14px;
 }
 
 button:focus {
@@ -690,10 +703,10 @@ section {
     /* display: flex; */
     display: block;
     flex-direction: column;
-    box-shadow: 0 8pt 0 0 rgba(0, 0, 0, 0.5), 0 3pt 3pt 0 rgba(0, 0, 0, 0.5);
-    padding-bottom: 8pt;
-    padding-top: 8pt;
-    /* border-bottom-width: 8pt;
+    box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.5), 0 3px 3px 0 rgba(0, 0, 0, 0.5);
+    padding-bottom: 8px;
+    padding-top: 8px;
+    /* border-bottom-width: 8px;
     border-bottom-color: rgb(207, 207, 207);
     border-bottom-style: solid; */
 }
@@ -703,38 +716,38 @@ section {
 } */
 
 .button_container {
-    padding-top: 8pt;
-    flex: 1 0 100pt;
+    padding-top: 16px;
+    flex: 1 0 100px;
     border-top-color: #e5e5e5;
     border-top-style: solid;
     border-top-width: 1px;
 }
 
 article > div {
-    padding: 0 8pt;
+    padding: 0 8px;
 }
 
 .bild_text {
     color: grey;
-    font-size: 8pt;
-    margin-bottom: 16pt;
+    font-size: 8px;
+    margin-bottom: 16px;
 }
 
 .bild_text * {
     color: grey;
-    font-size: 8pt;
+    font-size: 8px;
 }
 
 article h1 {
-    font-size: 20pt;
+    font-size: 20px;
 }
 
 div.time {
-    font-size: 10pt;
+    font-size: 10px;
 }
 
 div.league {
-    font-size: 10pt;
+    font-size: 10px;
     font-weight: bold;
 }
 
@@ -744,7 +757,7 @@ article > img {
 }
 
 article p {
-    margin: 16pt 0;
+    margin: 16px 0;
 }
 
 span.dateline {
@@ -767,41 +780,41 @@ span.dateline {
 }
 
 .sharebox img {
-    margin-right: 4pt;
+    margin-right: 4px;
 }
 
 .resultbox {
     background-color: #ffe0dc;
-    margin: 8pt 0;
-    padding-top: 16pt;
-    padding-bottom: 8pt;
+    margin: 8px 0;
+    padding-top: 16px;
+    padding-bottom: 8px;
     text-align: center;
-    font-size: 10pt;
+    font-size: 10px;
 }
 
 .resultbox > .teams {
     font-weight: bold;
-    font-size: 16pt;
-    margin-top: 4pt;
-    margin-bottom: 8pt;
+    font-size: 16px;
+    margin-top: 4px;
+    margin-bottom: 8px;
 }
 
 .suggestionsbox {
     background: #e5e5e5;
-    padding-left: 16pt;    
+    padding-left: 16px;    
 }
 
 .suggestionsbox .title {
-    font-size: 14pt;
+    font-size: 14px;
     font-weight: bold;
     color: black;
-    padding: 8pt 0;
+    padding: 8px 0;
 }
 
 .suggestionsbox ul {
     display: flex;
     overflow: scroll;
-    padding-bottom: 16pt;
+    padding-bottom: 16px;
 }
 
 .suggestionsbox a {
@@ -810,14 +823,14 @@ span.dateline {
 }
 
 .suggestionsbox li img {
-    height: 80pt;
+    height: 80px;
 }
 
 .suggestionsbox p {
-    margin-top: 8pt;
+    margin-top: 8px;
     font-weight: bold;
 
-    max-height: 45pt;
+    max-height: 45px;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -829,7 +842,7 @@ span.dateline {
 }
 
 .suggestionsbox li {
-    padding-right: 16pt;
+    padding-right: 16px;
 }
 
 .standings {
@@ -838,7 +851,7 @@ span.dateline {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 8pt;
+    padding-bottom: 8px;
 }
 
 .standings table {
@@ -851,20 +864,20 @@ span.dateline {
     font-weight: normal;    
 }
 .standings tr td img {
-    width: 20pt;
-    height: 20pt;
+    width: 20px;
+    height: 20px;
     display: block;
 }
 
 .standings tr th, .standings tr td {
     text-align: left;
-    padding: 2pt 6pt;
+    padding: 2px 6px;
 }
 .standings tr th:first-child, .standings tr td:first-child {
-    padding-left: 2pt;
+    padding-left: 2px;
 }
 .standings tr th:last-child, .standings tr td:last-child {
-    padding-right: 10pt;
+    padding-right: 10px;
 }
 .standings tr:nth-child(2n) {
     background-color: white;
