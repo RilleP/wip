@@ -14,7 +14,7 @@
 
 .desktop_menu .search_box:placeholder-shown {
     background-image: url("temp_search_grey.png");
-    background-position: 90% 50%;
+    background-position: right 8px top 50%;
     background-size: auto 60%;
     background-repeat: no-repeat;
     padding-left: 8px;

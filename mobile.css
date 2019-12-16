@@ -168,7 +168,7 @@
     border-right: none;
 
     background-image: url("temp_drop_down.png");
-    background-position: 90% 50%;
+    background-position: right 4px top 50%;
     background-origin: border-box;
     background-repeat: no-repeat;
     background-size: 12px auto;
