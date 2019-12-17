@@ -5,11 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>adogio</title> 
 <link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" type="text/css" href="mobile.css">
 <link rel="stylesheet" type="text/css" href="desktop.css">
 <link rel="stylesheet" type="text/css" href="desktop_start.css">
 <link rel="stylesheet" type="text/css" href="categories.css">
-<link rel="stylesheet" type="text/css" href="menu.css">
+<link rel="stylesheet" type="text/css" href="mobile_menu.css">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -23,8 +22,8 @@
 <body>
     
         <div class="banner top">
-            <div class="mobile_top_container centered">
-                <div class="mobile_top">
+            <div class="top_container centered">
+                <div class="top_main">
                     <a href="http://adogio.com/sv/" class="logo"><img src='Logo_vit_text.svg'></a>
                     <div class="filler"></div>
                     <button class="top mobile_only" onclick="document.getElementById('search').setAttribute('open', 'true')">
@@ -42,7 +41,6 @@
                         <a class="top desktop_only" href="#contact">Kontakta oss</a>
                     </div>
                     
-                    <div class="filler desktop_only"></div>
                 </div>
                 <div id="search" open="false">
                     <form>
@@ -100,6 +98,7 @@
                     <div class="menu_link"><a href="#">ARBETSMARKNAD</a>
                         <div class="line"></div>
                     </div>
+                    <div class="filler"></div>
                     <div id="search" open="false">
                         <form>
                             <div class="drop_down">
@@ -979,14 +978,16 @@
     </div>
     </div>
     <footer class="banner">
+        <a href="http://adogio.com/sv/" class="logo"><img src='Logo_vit.svg'></a>
+        <div class="filler"></div>
         <p>&nbsp;</p>
         <div>
-            <p>© <span>adogio</span></p>
+            <p>© <span><b>adogio</b></span></p>
             <span>http://adogio.com</span>
             e-post <span>info@adogio.com</span><br />
             Chefredaktör och ansvarig utgivare: Ola Nilsson
         </div>
-     </footer>
+    </footer>
 
     <div id="menu" open="false">
         <div class="menu_shadow" onclick="this.parentElement.setAttribute('open', 'false')"></div>

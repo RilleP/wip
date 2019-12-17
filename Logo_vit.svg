@@ -5,9 +5,9 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   viewBox="0 0 472.66669 180"
+   viewBox="0 0 324 180"
    height="180"
-   width="472.66669"
+   width="324"
    xml:space="preserve"
    id="svg2"
    version="1.1"><metadata
@@ -22,7 +22,7 @@
        id="clipPath26"
        clipPathUnits="userSpaceOnUse"><path
          id="path24"
-         d="M 0,0 H 413 V 135 H 0 Z" /></clipPath><clipPath
+         d="M 0,0 H 297 V 135 H 0 Z" /></clipPath><clipPath
        id="clipPath36"
        clipPathUnits="userSpaceOnUse"><path
          id="path34"
@@ -30,7 +30,7 @@
        id="clipPath42"
        clipPathUnits="userSpaceOnUse"><path
          id="path40"
-         d="M 0,0 H 413 V 135 H 0 Z" /></clipPath><clipPath
+         d="M 0,0 H 297 V 135 H 0 Z" /></clipPath><clipPath
        id="clipPath52"
        clipPathUnits="userSpaceOnUse"><path
          id="path50"
@@ -38,7 +38,7 @@
        id="clipPath58"
        clipPathUnits="userSpaceOnUse"><path
          id="path56"
-         d="M 0,0 H 413 V 135 H 0 Z" /></clipPath><clipPath
+         d="M 0,0 H 297 V 135 H 0 Z" /></clipPath><clipPath
        id="clipPath68"
        clipPathUnits="userSpaceOnUse"><path
          id="path66"
@@ -46,15 +46,11 @@
        id="clipPath74"
        clipPathUnits="userSpaceOnUse"><path
          id="path72"
-         d="M 0,0 H 413 V 135 H 0 Z" /></clipPath><clipPath
-       id="clipPath84"
-       clipPathUnits="userSpaceOnUse"><path
-         id="path82"
-         d="M 0,0 H 413 V 135 H 0 Z" /></clipPath></defs><g
+         d="M 0,0 H 297 V 135 H 0 Z" /></clipPath></defs><g
      transform="matrix(1.3333333,0,0,-1.3333333,0,180)"
      id="g10"><g
        id="g12" /><g
-       transform="translate(-28.23694,0.61458337)"
+       transform="translate(-28.23694)"
        id="g14"><g
          clip-path="url(#clipPath20)"
          id="g16"><g
@@ -63,7 +59,7 @@
              id="path28"
              style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
              d="M 23.23694,99.85127 H 112.7016 V 49.18328 H 23.23694 Z" /></g></g></g><g
-       transform="translate(-28.23694,0.61458337)"
+       transform="translate(-28.23694)"
        id="g30"><g
          clip-path="url(#clipPath36)"
          id="g32"><g
@@ -72,7 +68,7 @@
              id="path44"
              style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
              d="M 213.5826,99.85127 H 267.935 V 47.33473 h -54.3524 z" /></g></g></g><g
-       transform="translate(-28.23694,0.61458337)"
+       transform="translate(-28.23694)"
        id="g46"><g
          clip-path="url(#clipPath52)"
          id="g48"><g
@@ -81,7 +77,7 @@
              id="path60"
              style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
              d="M 106.3977,99.85127 H 160.75 V 47.33473 h -54.3523 z" /></g></g></g><g
-       transform="translate(-28.23694,0.61458337)"
+       transform="translate(-28.23694)"
        id="g62"><g
          clip-path="url(#clipPath68)"
          id="g64"><g
@@ -89,40 +85,4 @@
            id="g70"><path
              id="path76"
              style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             d="m 152.5981,107.2454 h 72.8325 V 32.54637 h -72.8325 z" /></g></g></g><g
-       transform="translate(-28.23694,0.61458337)"
-       id="g78"><g
-         clip-path="url(#clipPath84)"
-         id="g80"><g
-           transform="matrix(1,0,0,-1,278,98.47788)"
-           id="g86"><text
-             id="text90"
-             style="font-variant:normal;font-weight:bold;font-size:14px;font-family:Roboto;-inkscape-font-specification:RobotoSlab-Bold;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             transform="translate(0,13)"><tspan
-               id="tspan88"
-               y="0"
-               x="0 10.815 19.754 33.229">NEWS</tspan></text>
-</g><g
-           transform="matrix(1,0,0,-1,278,98.47788)"
-           id="g92"><text
-             id="text96"
-             style="font-variant:normal;font-weight:bold;font-size:14px;font-family:Roboto;-inkscape-font-specification:RobotoSlab-Bold;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             transform="translate(0,29)"><tspan
-               id="tspan94"
-               y="0"
-               x="0 10.9438 20.5002 29.558201 38.5 48.125 56.156799 66.054802 75.125397 85.181602">HYPERLOCAL</tspan></text>
-</g><g
-           transform="matrix(1,0,0,-1,278,98.47788)"
-           id="g98"><text
-             id="text102"
-             style="font-variant:normal;font-weight:bold;font-size:14px;font-family:Roboto;-inkscape-font-specification:RobotoSlab-Bold;writing-mode:lr-tb;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-             transform="translate(0,45)"><tspan
-               id="tspan100"
-               y="0"
-               x="0 8.7360001 12.1674 21.4158 29.447599 39.3456 48.601002 58.6572">&amp; GLOBAL</tspan></text>
-</g><g
-           transform="matrix(1,0,0,-1,270,96.47788)"
-           id="g104"><path
-             id="path106"
-             style="fill:none;stroke:#ffffff;stroke-width:3;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
-             d="M 1.246869,1.402174 V 42.53261" /></g></g></g></g></svg>
+             d="m 152.5981,107.2454 h 72.8325 V 32.54637 h -72.8325 z" /></g></g></g></g></svg>
