@@ -17,7 +17,7 @@
 }
 
 .desktop_menu .search_box:placeholder-shown {
-    background-image: url("temp_search_grey.png");
+    background-image: url("icons/search_grey.png");
     background-position: right 8px top 50%;
     background-size: auto 60%;
     background-repeat: no-repeat;
@@ -50,7 +50,10 @@
 .menu_link a.icon {
     margin-bottom: 0;
 }
-
+.menu_link a.icon img {
+    width: 24px;
+    height: 24px;
+}
 
 .desktop_menu a {
     color: white;

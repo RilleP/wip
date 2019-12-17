@@ -589,7 +589,7 @@ section {
 }
 
 .search_box:placeholder-shown {
-    background-image: url("temp_search_grey.png");
+    background-image: url("icons/search_grey.png");
     background-position: 4px 50%;
     background-size: auto 60%;
     background-repeat: no-repeat;
@@ -677,7 +677,7 @@ section {
 .drop_down_content > button[selected=true] {
     background: #16989e;
     color: white;
-    background-image: url('temp_check_white.png');
+    background-image: url('icons/check_box_white.png');
     background-repeat: no-repeat;
     background-size: auto 60%;
     background-position: 4px 50%;
@@ -879,7 +879,7 @@ a.tag_arrow {
 }
 
 .check[selected=true] .checkmeout {
-    background-image: url('temp_check.png');
+    background-image: url('icons/check_box_green.png');
     background-size: 100% 100%;
 }
 
