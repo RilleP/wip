@@ -6,9 +6,9 @@
     --color_lightest: #f8d2ca;
     --color_tag_hover: #f0c1b6;
     --color_tag_pressed: #e6b5aa;
-    --icon: url("icons/Ikon_Nyheter.png");
+    --icon: url("icons/icon_news.png");
 }
-.blaljus {
+.siren {
     --color_dark: #375abb;
     --color_mid: #63aefb;
     --color_light: #c2cdeb;
@@ -16,7 +16,7 @@
     --color_tag_hover: #adb6cf;
     --color_tag_pressed: #b6c1df;
 
-    --icon: url("icons/Ikon_BlaLjus.png");
+    --icon: url("icons/icon_siren.png");
 }
 
 .sport {
@@ -26,7 +26,57 @@
     --color_lightest: #ecdefc;
     --color_tag_hover: #d0c4e9;
     --color_tag_pressed: #beb2d6;
-    --icon: url("icons/Ikon_Sport.png");
+    --icon: url("icons/icon_sport.png");
+}
+
+.entertainment {
+    --color_dark: #ae233c;
+    --color_mid: #d25f49;
+    --color_light: #e7bec5;
+    --color_lightest: rgb(247, 240, 255);
+    --color_tag_hover: #e7bec5;
+    --color_tag_pressed: #cca7ad;
+    --icon: url("icons/icon_entertainment.png");
+}
+
+.climate {
+    --color_dark: #43763c;
+    --color_mid: #68b785;
+    --color_light: #c7d7bf;
+    --color_lightest: #edf8e7;
+    --color_tag_hover: #dcebd4;
+    --color_tag_pressed: #cad8c2;
+    --icon: url("icons/icon_climate.png");
+}
+
+.economy {
+    --color_dark: #819925;
+    --color_mid: #a8d253;
+    --color_light: #d9e0bd;
+    --color_lightest: #f3f8df;
+    --color_tag_hover: rgb(216, 221, 196);
+    --color_tag_pressed: #dae0c2;
+    --icon: url("icons/icon_economy.png");
+}
+
+.votes {
+    --color_dark: #4531dd;
+    --color_mid: #689ffc;
+    --color_light: #bbc0f5;
+    --color_lightest: #e2e4f7;
+    --color_tag_hover: #d9dbf3;
+    --color_tag_pressed: #c5c8e9;
+    --icon: url("icons/icon_votes.png");
+}
+
+.labormarket {
+    --color_dark: #ac8a39;
+    --color_mid: #f0c42e;
+    --color_light: #faeec0;
+    --color_lightest: #fcf7e3;
+    --color_tag_hover: #f0ead2;
+    --color_tag_pressed: #e4dec7;
+    --icon: url("icons/icon_labormarket.png");
 }
 
 section header.category img {
