@@ -478,6 +478,15 @@ span.dateline {
     .layout1 .main_list li:nth-child(n + 2) > a > div {
         padding-left: 0;
         padding-right: 0;
+
+        max-height: 60px;
+        line-height: 20px;
+        overflow: hidden;
+        white-space: initial;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
     }
 
     .layout1 .main_list li:nth-child(n + 2) > a > div * {
