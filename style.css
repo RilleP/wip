@@ -355,6 +355,10 @@ span.dateline {
     margin: 0;
 }
 
+.layout4 .main_list img {
+    display: none;
+}
+
 .layout1 .main_list li:nth-child(n + 6) > a > div,
 .layout2 .main_list li:nth-child(n + 2) > a > div, 
 .layout3 .main_list li:nth-child(n + 4) > a > div,
@@ -394,10 +398,10 @@ span.dateline {
     padding-right: 0;
 }
 
-.layout1 section:not([show_more]) .main_list li:nth-child(n + 6),
-.layout2 section:not([show_more]) .main_list li:nth-child(n + 5),
-.layout3 section:not([show_more]) .main_list li:nth-child(n + 6),
-.layout4 section:not([show_more]) .main_list li:nth-child(n + 5)
+.layout1:not([show_more]) .main_list li:nth-child(n + 6),
+.layout2:not([show_more]) .main_list li:nth-child(n + 5),
+.layout3:not([show_more]) .main_list li:nth-child(n + 6),
+.layout4:not([show_more]) .main_list li:nth-child(n + 5)
 {
     display:none;
 }
