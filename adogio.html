@@ -20,7 +20,20 @@
 </head>
 
 <body>
-    
+        <script>
+            function show_more(button_element) {
+                var element = button_element;
+                while(element.parentElement) {
+                    element = element.parentElement;
+                    console.log(element.tagName.toLowerCase())
+                    if(element.tagName && element.tagName.toLowerCase() === "section") {
+                        element.setAttribute('show_more', 'true');
+                        button_element.parentElement.style.display = 'none';
+                        return;
+                    }
+                }
+            }
+        </script>
         <div class="banner top">
             <div class="top_container centered">
                 <div class="top_main">
@@ -205,9 +218,78 @@
                 </div>
             </a>
         </li>
+        <li>
+            <a href="F.191117.02001900531003">
+                <img src="http://adogio.com/images/swe__aik_400x250.jpg" alt="swe  savedalens if rod">
+                <div>
+                    <span class="category">SPORT |&nbsp;</span><span class="header">Tim Ternebrink – stor matchvinnare</span>
+                    <p>Tim Ternebrink bidrog starkt till segern för Onsala (P19) mot Varbergs (P19) genom att göra tre mål.
+                        Matchen slutade…</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="F.191117.02001900526003">
+                <img src="http://adogio.com/images/swe__aik_400x250.jpg" alt="swe  savedalens if rod">
+                <div>
+                    <span class="category">SPORT |&nbsp;</span><span class="header"> Albin Hellqvist fixade segern</span>
+                    <p>Stor matchvinnare - Albin Hellqvist med två mål. Norrköping (P19) vann med 4-1 mot Hammarby T (P19). Inte
+                        bara en, uta…</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="F.191117.02001900522004">
+                <div>
+                    <span class="category">SPORT |&nbsp;</span><span class="header"> Sandviken hade ingen chans </span>
+                    <p>Inget snack, 6-0 till Djursholm (P19) och en klar seger. Stor hjälp fanns i Gustav Lindgren – via fyra
+                        fullträffar. Gäst…</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="F.191117.02001900522004">
+                <div>
+                    <span class="category">SPORT |&nbsp;</span>
+                    <span class="header"> Sandviken hade ingen chans </span>
+                    <p>Inget snack, 6-0 till Djursholm (P19) och en klar seger. Stor hjälp fanns i Gustav Lindgren – via fyra
+                        fullträffar. Gäst…</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="F.191117.02001900522004">
+                <div>
+                    <span class="category">SPORT |&nbsp;</span>
+                    <span class="header"> Sandviken hade ingen chans </span>
+                    <p>Inget snack, 6-0 till Djursholm (P19) och en klar seger. Stor hjälp fanns i Gustav Lindgren – via fyra
+                        fullträffar. Gäst…</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="F.191117.02001900522004">
+                <div>
+                    <span class="category">SPORT |&nbsp;</span>
+                    <span class="header"> Sandviken hade ingen chans </span>
+                    <p>Inget snack, 6-0 till Djursholm (P19) och en klar seger. Stor hjälp fanns i Gustav Lindgren – via fyra
+                        fullträffar. Gäst…</p>
+                </div>
+            </a>
+        </li>
+        <li>
+            <a href="F.191117.02001900522004">
+                <div>
+                    <span class="category">SPORT |&nbsp;</span>
+                    <span class="header"> Sandviken hade ingen chans </span>
+                    <p>Inget snack, 6-0 till Djursholm (P19) och en klar seger. Stor hjälp fanns i Gustav Lindgren – via fyra
+                        fullträffar. Gäst…</p>
+                </div>
+            </a>
+        </li>
     </ul>                
     <div class="button_container">
-        <button class="more">Fler nyheter</button>
+        <button class="more" onclick="show_more(this)">Fler nyheter</button>
     </div>
     </div>
 
@@ -315,16 +397,7 @@
             </div>
         </a>
     </li>
-    <li class="double_row">
-        <a href="F.191102.02001900001237">
-            <img src="http://adogio.com/images/swe__hammarby_400x250.jpg" alt="swe  hammarby">
-            <img src="http://adogio.com/images/swe__hammarby_400x125.jpg" alt="swe  hammarby">
-            <div>
-                <span class="header">Hammarby vann mot Häcken med 4-1</span>
-                <p>Hammarby vann på hemmaplan mot Häcken. På lördagen möttes Hammarby och Häcken på Tele2 Arena. Man inledde
-                    bäst, Ham…</p>
-            </div>
-        </a>
+    <li>
         <a href="F.191102.02001900001237">
             <img src="http://adogio.com/images/swe__hammarby_400x250.jpg" alt="swe  hammarby">
             <img src="http://adogio.com/images/swe__hammarby_400x125.jpg" alt="swe  hammarby">
@@ -337,7 +410,7 @@
     </li>
     
         </ul>                
-            <div class="button_container"><button class="more">Mer sport</button>
+            <div class="button_container"><button class="more" onclick="show_more(this)">Mer sport</button>
             </div>
     </div>
     </section>
@@ -413,17 +486,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="double_row">
-                    <a href="F.191102.02001900001237">
-                        <img src="http://adogio.com/images/swe__hammarby_400x250.jpg" alt="swe  hammarby">
-                        <img src="http://adogio.com/images/swe__hammarby_400x125.jpg" alt="swe  hammarby">
-                        <div>
-                            <span class="header">Hammarby vann mot Häcken med 4-1</span>
-                            <p>Hammarby vann på hemmaplan mot Häcken. På lördagen möttes Hammarby och Häcken på Tele2 Arena.
-                                Man inledde
-                                bäst, Ham…</p>
-                        </div>
-                    </a>
+                <li>
                     <a href="F.191102.02001900001237">
                         <img src="http://adogio.com/images/swe__hammarby_400x250.jpg" alt="swe  hammarby">
                         <img src="http://adogio.com/images/swe__hammarby_400x125.jpg" alt="swe  hammarby">
@@ -437,7 +500,7 @@
                 </li>
     
             </ul>
-            <div class="button_container"><button class="more">Mer sport</button>
+            <div class="button_container"><button class="more" onclick="show_more(this)">Mer sport</button>
             </div>
         </div>
     </section>
@@ -459,7 +522,7 @@
             <div class="main_list">                
             <ul>
 
-    <li class="double_row">
+    <li>
         <a href="F.191102.02001900001237">
                 <img src="http://adogio.com/images/swe__hammarby_400x250.jpg" alt="swe  hammarby">
                 <img src="http://adogio.com/images/swe__hammarby_400x125.jpg" alt="swe  hammarby">
@@ -468,26 +531,8 @@
                 <p>Hammarby vann på hemmaplan mot Häcken.   På lördagen möttes Hammarby och Häcken på Tele2 Arena.  Man inledde bäst, Ham…</p> 
             </div>
         </a>
-        <a href="F.191102.02001900001237">
-            <img src="http://adogio.com/images/swe__hammarby_400x250.jpg" alt="swe  hammarby">
-            <img src="http://adogio.com/images/swe__hammarby_400x125.jpg" alt="swe  hammarby">
-            <div>
-                <span class="header">Hammarby vann mot Häcken med 4-1</span>
-                <p>Hammarby vann på hemmaplan mot Häcken. På lördagen möttes Hammarby och Häcken på Tele2 Arena. Man inledde
-                    bäst, Ham…</p>
-            </div>
-        </a>
     </li>
-    <li class="double_row">
-        <a href="F.191102.02001900001237">
-            <img src="http://adogio.com/images/swe__hammarby_400x250.jpg" alt="swe  hammarby">
-            <img src="http://adogio.com/images/swe__hammarby_400x125.jpg" alt="swe  hammarby">
-            <div>
-                <span class="header">Hammarby vann mot Häcken med 4-1</span>
-                <p>Hammarby vann på hemmaplan mot Häcken. På lördagen möttes Hammarby och Häcken på Tele2 Arena. Man inledde
-                    bäst, Ham…</p>
-            </div>
-        </a>
+    <li>
         <a href="F.191102.02001900001239">
             <img src="http://adogio.com/images/swe__aik_400x250.jpg" alt="swe  aik">
             <img src="http://adogio.com/images/swe__aik_400x125.jpg" alt="swe  aik">
@@ -498,13 +543,12 @@
             </div>
         </a>
     </li>
-    <li>
-        <a href="F.191102.02001900001240">
+    <li><a href="F.191102.02001900001240">
                 <img src="http://adogio.com/images/swe__ik_sirius_fk_400x250.jpg" alt="swe  ik sirius fk">
                 <img src="http://adogio.com/images/swe__ik_sirius_fk_400x125.jpg" alt="swe  ik sirius fk">
             <div>
                 <span class="header">Kalmar kammade noll</span> 
-                3-0 blev det. 3 för hemmalaget Sirius och 0 för gästande Kalmar.    Det var en försiktig start på kampen.  I den första halvleken l…
+                <p>3-0 blev det. 3 för hemmalaget Sirius och 0 för gästande Kalmar.    Det var en försiktig start på kampen.  I den första halvleken l…</p>
             </div>
         </a>
     </li>
@@ -674,7 +718,7 @@
     </li>
                 </ul>                
             </div>
-            <div class="button_container"><button class="more">Mer</button>
+            <div class="button_container"><button class="more" onclick="show_more(this)">Mer</button>
             </div>
         </div>
     </section>
@@ -814,7 +858,7 @@
     </li>
                 </ul>                
             </div>
-            <div class="button_container"><button class="more">Mer sport</button>
+            <div class="button_container"><button class="more" onclick="show_more(this)">Mer sport</button>
             </div>
         </div>
     </section>

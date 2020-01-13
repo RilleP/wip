@@ -306,152 +306,155 @@ span.dateline {
     background-color: white;
 }
 
-:-webkit-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) {
+.layout1 .main_list li:nth-child(n + 6),
+.layout2 .main_list li:nth-child(n + 2),
+.layout3 .main_list li:nth-child(n + 4),
+.layout4 .main_list li:nth-child(n + 0)
+{
     display: flex;
     flex-direction: column;
 }
 
-:-webkit-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) a {
+.layout1 .main_list li:nth-child(n + 6) a,
+.layout2 .main_list li:nth-child(n + 2) a,
+.layout3 .main_list li:nth-child(n + 4) a,
+.layout4 .main_list li:nth-child(n + 0) a
+{
     padding-left: 16px;
     padding-right: 16px;
+}
+
+.layout3 .main_list li:nth-child(2) a {
+    padding-left: 16px;
+    padding-right: 8px;
+}
+
+.layout3 .main_list li:nth-child(3) a {
+    padding-left: 8px;
+    padding-right: 16px;
+}
+
+.layout1 .main_list li:nth-child(n + 6) a,
+.layout2 .main_list li:nth-child(n + 2) a,
+.layout3 .main_list li:nth-child(n + 4) a,
+.layout4 .main_list li:nth-child(n + 0) a 
+{
     display: flex;
     flex-direction: row;
     overflow: hidden;
 }
 
-:-webkit-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) img {
+.layout1 .main_list li:nth-child(n + 6) img,
+.layout2 .main_list li:nth-child(n + 2) img,
+.layout3 .main_list li:nth-child(n + 4) img,
+.layout4 .main_list li:nth-child(n + 0) img 
+{
     width: 60px;
     height: 60px;
     padding-right: 8px;
+    margin: 0;
 }
 
-:-webkit-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) > a > div {
+.layout1 .main_list li:nth-child(n + 6) > a > div,
+.layout2 .main_list li:nth-child(n + 2) > a > div, 
+.layout3 .main_list li:nth-child(n + 4) > a > div,
+.layout4 .main_list li:nth-child(n + 0) > a > div
+{
     padding-left: 0;
     padding-right: 0;
-    max-height: 45px;
+    max-height: 60px;
+    line-height: 20px;
     overflow: hidden;
+    white-space: initial;
     text-overflow: ellipsis;
     display: -webkit-box;
    -webkit-box-orient: vertical;
    -webkit-line-clamp: 3;
 }
 
-:-webkit-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) > a > div * {
+.layout3 .main_list li:nth-child(-n + 3):nth-child(n + 2) > a > div {
     padding-left: 0;
     padding-right: 0;
-    display: inline;
-}
-
-/* Copy paste for firefox */
-:-moz-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) {
-    display: flex;
-    flex-direction: column;
-}
-
-:-moz-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) a {
-    padding-left: 16px;
-    padding-right: 16px;
-    display: flex;
-    flex-direction: row;
+    max-height: 80px;
+    line-height: 20px;
     overflow: hidden;
-}
-
-:-moz-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) img {
-    width: 60px;
-    height: 60px;
-    padding-right: 8px;
-}
-
-:-moz-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) > a > div {
-    padding-left: 0;
-    padding-right: 0;
-    max-height: 45px;
-    overflow: hidden;
+    white-space: initial;
     text-overflow: ellipsis;
-    display: -moz-box;
-   -moz-box-orient: vertical;
-   -moz-line-clamp: 3;
+    display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 4;
 }
 
-:-moz-any(.layout2, .layout3, .layout4) .main_list li:nth-child(n + 2):not(.double_row) > a > div * {
+.layout1 .main_list li:nth-child(n + 6) > a > div *,
+.layout2 .main_list li:nth-child(n + 4) > a > div *,
+.layout3 .main_list li:nth-child(n + 2) > a > div *,
+.layout4 .main_list li:nth-child(n + 0) > a > div * 
+{
     padding-left: 0;
     padding-right: 0;
-    display: inline;
 }
 
+.layout1 section:not([show_more]) .main_list li:nth-child(n + 6),
+.layout2 section:not([show_more]) .main_list li:nth-child(n + 5),
+.layout3 section:not([show_more]) .main_list li:nth-child(n + 6),
+.layout4 section:not([show_more]) .main_list li:nth-child(n + 5)
+{
+    display:none;
+}
+
+.layout3 .main_list ul {
+    display: inline-grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+}
+
+.layout3 .main_list li:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+}
+
+.layout3 .main_list li:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+}
+.layout3 .main_list li:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
+}
+.layout3 .main_list li:nth-child(n + 4) {
+    grid-column: 1/3;
+}
 
 @media screen and (max-width: 1000px) {
-    .layout1 .main_list li:nth-child(n + 2):not(.double_row) {
+    .layout1 .main_list li:nth-child(n + 2) {
         display: flex;
         flex-direction: column;
     }
 
-    .layout1 .main_list li:nth-child(n + 2):not(.double_row) a {
+    .layout1 .main_list li:nth-child(n + 2) a {
         padding-left: 16px;
         padding-right: 16px;
         display: flex;
         flex-direction: row;
     }
 
-    .layout1 .main_list li:nth-child(n + 2):not(.double_row) img {
+    .layout1 .main_list li:nth-child(n + 2) img {
         width: 60px;
         height: 60px;
         padding-right: 8px;
     }
 
-    .layout1 .main_list li:nth-child(n + 2):not(.double_row) > a > div {
+    .layout1 .main_list li:nth-child(n + 2) > a > div {
         padding-left: 0;
         padding-right: 0;
     }
 
-    .layout1 .main_list li:nth-child(n + 2):not(.double_row) > a > div * {
+    .layout1 .main_list li:nth-child(n + 2) > a > div * {
         padding-left: 0;
         padding-right: 0;
         display: inline;
     }
-}
-.double_row {
-    padding-left: 8px;
-    padding-right: 8px;
-    
-    display: flex;
-    flex-direction: row;
-}
-
-.double_row img {
-    width: 100%;
-    height: auto;
-}
-
-.main_list .double_row > a {
-    padding-left: 8px;
-    padding-right: 8px;
-    display: flex;
-    flex-direction: column; 
-    flex: 1 1 0px;
-    width: 0;
-    flex-wrap: nowrap;
-    overflow: hidden;
-}
-
-.main_list .double_row > a > div {
-    display: flex;
-    flex-direction: column;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-.main_list .double_row > a > div > p {
-    max-height: 60px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-   -webkit-box-orient: vertical;
-   -webkit-line-clamp: 3;
-}
-
-.main_list .double_row > a > div * {
-    line-break: strict;
 }
 
 button {
