@@ -65,11 +65,23 @@
 .drawer > header {
     display: flex;
     flex-direction: row-reverse;
-    margin: 20px;
 }
 
 .drawer > header button div {
     font-size: 8px;
+}
+
+.drawer > header button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin: 20px;
+}
+
+.drawer > header button > img {
+    height: 24px;
+    width: 24px;
 }
 
 .desc {
